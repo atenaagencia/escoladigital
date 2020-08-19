@@ -8,7 +8,7 @@
 }
 </style>
 @section('content')
-<div class="container" id="register">
+<div class="container main-font" id="register">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <h1 class="text-dark main-font display-4 py-4">Crie sua conta.</h1>
