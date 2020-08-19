@@ -23,7 +23,7 @@
         <div class="page-header-content pt-4">
             <div class="row align-items-center justify-content-between">
                 <div class="col-auto mt-5">
-                    <h1 class="page-header-title main-font">Philip Santos</h1>
+                    <h1 class="page-header-title main-font">{{ $user->name }}</h1>
                     <div class="page-header-subtitle">Example dashboard overview and content summary</div>
                 </div>
                 <div class="col-12 col-xl-auto mt-4">
