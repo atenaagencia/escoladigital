@@ -170,5 +170,25 @@
         <a href="#" class="lead main-font text-light"><i class="fa fa-arrow-right text-light pr-3"></i>VER TODOS</a>
     </div>
 
+
+    <!-- TODOS OS CURSOS SECTION -->
+    <h1 class="page-header-title main-font text-light font-weight-bold py-2">Todos os Cursos</h1>
+
+    <div class="row">
+        <div class="col-xxl-12 col-xl-12 mb-4 py-4">
+            <div class="card bg-dark rounded-0">
+                <div class="card-body text-light main-font font-weight-bold pl-xl-4 p-5">
+                    <p class="lead p-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et rerum fugit ex quas delectus tenetur alias voluptatem dolorem
+                        exercitationem reprehenderit commodi pariatur distinctio corrupti, ullam ut deleniti cupiditate voluptates!
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-link main-font text-light font-weight-bold">VER MAIS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 @endsection
