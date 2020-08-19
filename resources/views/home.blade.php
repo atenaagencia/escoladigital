@@ -11,6 +11,10 @@
 .mt-n10, .my-n10 {
     margin-top: -3rem !important;
 }
+
+.fa-2x {
+    font-size: 1.6em !important;
+}
 </style>
 
 @section('content')
@@ -51,9 +55,15 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- MEUS CURSOS SECTION-->
+    <h1 class="page-header-title main-font text-light font-weight-bold py-2">Meus Cursos</h1>
+
+    <div class="row">
         <div class="col-xxl-4 col-xl-4 mb-4 py-4">
             <div class="card bg-dark border border-purple shadow rounded-0">
-                <div class="card-header main-font text-light h-100">
+                <div class="card-header bg-too-dark main-font text-light h-100">
                     <h3>Programador Web</h3>
                 </div>
                 <div class="card-body pl-xl-4 p-5">
@@ -61,13 +71,13 @@
                     <p class="text-light card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="btn bg-gradient-primary-to-secondary main-font text-light float-right">CONTINUAR</a>
+                    <a href="#" class="btn bg-gradient-primary-to-secondary main-font text-light">CONTINUAR</a>
                 </div>
             </div>
         </div>
         <div class="col-xxl-4 col-xl-4 mb-4 py-4">
             <div class="card bg-dark border border-primary shadow rounded-0">
-                <div class="card-header main-font text-light h-100">
+                <div class="card-header bg-too-dark main-font text-light h-100">
                     <h3>Programador Web</h3>
                 </div>
                 <div class="card-body pl-xl-4 p-5">
@@ -75,13 +85,13 @@
                     <p class="text-light card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="btn bg-gradient-primary-to-secondary main-font text-light float-right">CONTINUAR</a>
+                    <a href="#" class="btn bg-gradient-primary-to-secondary main-font text-light">CONTINUAR</a>
                 </div>
             </div>
         </div>
         <div class="col-xxl-4 col-xl-4 mb-4 py-4">
             <div class="card bg-dark border border-warning shadow rounded-0">
-                <div class="card-header main-font text-light h-100">
+                <div class="card-header bg-too-dark main-font text-light h-100">
                     <h3>Programador Web</h3>
                 </div>
                 <div class="card-body pl-xl-4 p-5">
@@ -89,30 +99,76 @@
                     <p class="text-light card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="btn bg-gradient-primary-to-secondary main-font text-light float-right">CONTINUAR</a>
+                    <a href="#" class="btn bg-gradient-primary-to-secondary main-font text-light">CONTINUAR</a>
                 </div>
             </div>
         </div>
+        <div class="ml-auto float-right text-right pr-xl-4">
+            <a href="#" class="lead main-font text-light"><i class="fa fa-arrow-right text-light pr-3"></i>VER TODOS</a>
+        </div>
+    </div><!--row-->
+
+    <!-- CURSOS RECOMENDADOS SECTION -->
+    <h1 class="page-header-title main-font text-light font-weight-bold py-2">Recomendados</h1>
+    <div class="row">
+        <div class="col-xxl-4 col-xl-4 mb-4 py-4">
+            <div class="card bg-dark border border-light shadow rounded-0">
+                <div class="card-header bg-too-dark border-0">
+                    <i class="fa fa-2x fa-certificate text-warning float-right ml-auto"></i>
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                </div>
+                <div class="card-body bg-too-dark text-light main-font font-weight-bold pl-xl-4 p-5">
+                    <h1 class="text-left">React Native + Vue JS</h1>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-link main-font text-light font-weight-bold">VER MAIS</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 mb-4 py-4">
+            <div class="card bg-dark border border-light shadow rounded-0">
+                <div class="card-header bg-too-dark border-0">
+                    <i class="fa fa-2x fa-certificate text-warning float-right ml-auto"></i>
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="far fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                </div>
+                <div class="card-body bg-too-dark text-light text-left main-font font-weight-bold pl-xl-4 p-5">
+                    <h1>Laravel para Frontends</h1>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-link main-font text-light font-weight-bold">VER MAIS</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 mb-4 py-4">
+            <div class="card bg-dark border border-light shadow rounded-0 h-100">
+                <div class="card-header bg-too-dark border-0">
+                    <i class="fa fa-2x fa-certificate text-warning float-right ml-auto"></i>
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="far fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="far fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                </div>
+                <div class="card-body h-100 bg-too-dark text-light text-left main-font font-weight-bold pl-xl-4 p-5">
+                    <h1>UI e UX</h1>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-link main-font text-light font-weight-bold">VER MAIS</a>
+                </div>
+            </div>
+        </div>
+    </div><!--row-->
+    <div class="ml-auto text-right pr-xl-4">
+        <a href="#" class="lead main-font text-light"><i class="fa fa-arrow-right text-light pr-3"></i>VER TODOS</a>
     </div>
+
 </div>
-
-<!-- <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 @endsection

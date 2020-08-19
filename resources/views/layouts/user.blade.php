@@ -21,7 +21,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 
-    <script src="https://use.fontawesome.com/cdd53714a0.js"></script>
+    <!-- <script src="https://use.fontawesome.com/cdd53714a0.js"></script> -->
+    <script src="https://kit.fontawesome.com/a7e6020e63.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-too-dark">
     <div id="app">
@@ -80,5 +81,10 @@
             @yield('content')
         </main>
     </div>
+    <footer class="footer p-5 bg-dark mt-5">
+        <div class="container">
+            <p class="lead main-font text-light text-uppercase">Escola_digital | 2020.</p>
+        </div>
+    </footer>
 </body>
 </html>
