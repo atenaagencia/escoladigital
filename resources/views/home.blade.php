@@ -27,7 +27,8 @@
                     <div class="page-header-subtitle">Example dashboard overview and content summary</div>
                 </div>
                 <div class="col-12 col-xl-auto mt-4">
-                    <button class="btn btn-warning main-font font-weight-bold text-uppercase p-3">Meus cursos</button>
+                <button class="btn btn-light rounded-0 main-font font-weight-bold text-uppercase p-3 mr-2">FÓRUNS</button>
+                    <button class="btn btn-warning rounded-0 main-font font-weight-bold text-uppercase p-3">CONSULTORIA</button>
                 </div>
             </div>
         </div>
@@ -61,7 +62,7 @@
     <h1 class="page-header-title main-font text-light font-weight-bold py-2">Meus Cursos</h1>
 
     <div class="row">
-        <div class="col-xxl-4 col-xl-4 mb-4 py-4">
+        <div class="col-xxl-4 col-xl-4 mb-2 py-4">
             <div class="card bg-dark border border-purple shadow rounded-0">
                 <div class="card-header bg-too-dark main-font text-light h-100">
                     <h3>Programador Web</h3>
@@ -70,36 +71,39 @@
                     <h5 class="text-light card-title">Special title treatment</h5>
                     <p class="text-light card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
-                <div class="card-footer">
-                    <a href="#" class="btn bg-gradient-primary-to-secondary main-font text-light">CONTINUAR</a>
+                <div class="card-footer bg-gray">
+                    <a href="#" class="btn btn-link nav-link main-font font-weight-bold text-light float-left">50%</a>
+                    <a href="#" class="btn btn-link nav-link float-right main-font font-weight-bold text-light">CONTINUAR</a>
                 </div>
             </div>
         </div>
-        <div class="col-xxl-4 col-xl-4 mb-4 py-4">
+        <div class="col-xxl-4 col-xl-4 mb-2 py-4">
             <div class="card bg-dark border border-primary shadow rounded-0">
                 <div class="card-header bg-too-dark main-font text-light h-100">
-                    <h3>Programador Web</h3>
+                    <h3>React e Vue JS</h3>
                 </div>
                 <div class="card-body pl-xl-4 p-5">
                     <h5 class="text-light card-title">Special title treatment</h5>
                     <p class="text-light card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
-                <div class="card-footer">
-                    <a href="#" class="btn bg-gradient-primary-to-secondary main-font text-light">CONTINUAR</a>
+                <div class="card-footer bg-gray">
+                    <a href="#" class="btn btn-link nav-link main-font font-weight-bold text-light float-left">50%</a>
+                    <a href="#" class="btn btn-link nav-link float-right main-font font-weight-bold text-light">CONTINUAR</a>
                 </div>
             </div>
         </div>
-        <div class="col-xxl-4 col-xl-4 mb-4 py-4">
+        <div class="col-xxl-4 col-xl-4 mb-2 py-4">
             <div class="card bg-dark border border-warning shadow rounded-0">
                 <div class="card-header bg-too-dark main-font text-light h-100">
-                    <h3>Programador Web</h3>
+                    <h3>Marketing Digital</h3>
                 </div>
                 <div class="card-body pl-xl-4 p-5">
                     <h5 class="text-light card-title">Special title treatment</h5>
                     <p class="text-light card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
-                <div class="card-footer">
-                    <a href="#" class="btn bg-gradient-primary-to-secondary main-font text-light">CONTINUAR</a>
+                <div class="card-footer bg-gray">
+                    <a href="#" class="btn btn-link nav-link main-font font-weight-bold text-light float-left">50%</a>
+                    <a href="#" class="btn btn-link nav-link float-right main-font font-weight-bold text-light">CONTINUAR</a>
                 </div>
             </div>
         </div>
@@ -109,9 +113,9 @@
     </div><!--row-->
 
     <!-- CURSOS RECOMENDADOS SECTION -->
-    <h1 class="page-header-title main-font text-light font-weight-bold py-2">Recomendados</h1>
+    <h1 class="page-header-title main-font text-light font-weight-bold mt-3 py-2">Recomendados</h1>
     <div class="row">
-        <div class="col-xxl-4 col-xl-4 mb-4 py-4">
+        <div class="col-xxl-4 col-xl-4 mb-2 py-4">
             <div class="card bg-dark border border-light shadow rounded-0">
                 <div class="card-header bg-too-dark border-0">
                     <i class="fa fa-2x fa-certificate text-warning float-right ml-auto"></i>
@@ -129,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xxl-4 col-xl-4 mb-4 py-4">
+        <div class="col-xxl-4 col-xl-4 mb-2 py-4">
             <div class="card bg-dark border border-light shadow rounded-0">
                 <div class="card-header bg-too-dark border-0">
                     <i class="fa fa-2x fa-certificate text-warning float-right ml-auto"></i>
@@ -147,7 +151,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xxl-4 col-xl-4 mb-4 py-4">
+        <div class="col-xxl-4 col-xl-4 mb-2 py-4">
             <div class="card bg-dark border border-light shadow rounded-0 h-100">
                 <div class="card-header bg-too-dark border-0">
                     <i class="fa fa-2x fa-certificate text-warning float-right ml-auto"></i>
@@ -172,7 +176,7 @@
 
 
     <!-- TODOS OS CURSOS SECTION -->
-    <h1 class="page-header-title main-font text-light font-weight-bold py-2">Todos os Cursos</h1>
+    <h1 class="page-header-title main-font text-light mt-3 font-weight-bold py-2">Novidades</h1>
 
     <div class="row">
         <div class="col-xxl-12 col-xl-12 mb-4 py-4">
