@@ -4,6 +4,17 @@
     height: 64px;
 }
 
+.btn-too-dark{
+    background: #2D2C2C !important;
+    color: white !important;
+}
+
+.btn-too-success{
+    background: #04B404 !important;
+    color: white !important;
+}
+
+
 .btn-custom-2{
     color: white !important;
     /* background: rgb(0, 86, 246); */

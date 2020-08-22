@@ -20,3 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/teste', function () {
+    return view('course.index');
+})->middleware('auth');
+
+// Route::resource('course', 'CourseController')->middleware('auth');

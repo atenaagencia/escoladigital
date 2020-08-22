@@ -73,7 +73,7 @@
                 </div>
                 <div class="card-footer bg-gray">
                     <a href="#" class="btn btn-link nav-link main-font font-weight-bold text-light float-left">50%</a>
-                    <a href="#" class="btn btn-link nav-link float-right main-font font-weight-bold text-light">CONTINUAR</a>
+                    <a href="/teste" class="btn btn-link nav-link float-right main-font font-weight-bold text-light">CONTINUAR</a>
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="card-footer bg-gray">
                     <a href="#" class="btn btn-link nav-link main-font font-weight-bold text-light float-left">50%</a>
-                    <a href="#" class="btn btn-link nav-link float-right main-font font-weight-bold text-light">CONTINUAR</a>
+                    <a href="/teste" class="btn btn-link nav-link float-right main-font font-weight-bold text-light">CONTINUAR</a>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
                 </div>
                 <div class="card-footer bg-gray">
                     <a href="#" class="btn btn-link nav-link main-font font-weight-bold text-light float-left">50%</a>
-                    <a href="#" class="btn btn-link nav-link float-right main-font font-weight-bold text-light">CONTINUAR</a>
+                    <a href="/teste" class="btn btn-link nav-link float-right main-font font-weight-bold text-light">CONTINUAR</a>
                 </div>
             </div>
         </div>
