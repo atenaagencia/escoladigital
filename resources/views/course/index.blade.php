@@ -31,7 +31,7 @@ main.player{
 </style>
 
 @section('content')
-<header class="page-header bg-dark text-light pb-10 border-bottom border-primary">
+<header class="page-header bg-dark text-light pb-10">
     <div class="container">
         <div class="page-header-content pt-4">
             <div class="row align-items-center justify-content-between">
@@ -66,29 +66,34 @@ main.player{
         </div>
     </div>
 
-    <div class="container">
+    <div class="container py-3">
+        <div class="float-left">
+            <a href="{{asset('home')}}" class="lead text-light">
+                <i class="fa fa-arrow-left mr-3"></i>
+                Todos os Cursos
+            </a>
+        </div>
         <div class="float-right row">
             <div class="mr-3">
                 <p class="lead main-font font-weight-bold text-light">Avalie esta aula:</p>
             </div>
-            <div>
+            <div class="rating">
                 <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
                 <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
                 <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
                 <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
                 <i class="far fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
             </div>
-            
         </div>
     </div>
 
     <!-- MEUS CURSOS SECTION-->
-    <h1 class="page-header-title main-font text-light font-weight-bold mt-5 py-2">Conteúdo Adicional</h1>
+    <h1 class="page-header-title main-font text-light font-weight-bold mt-5 py-4">Conteúdo Adicional</h1>
 
     <div class="row">
         <div class="col-xxl-12 col-xl-12 mb-4 py-4">
-            <div class="card bg-dark border border-primary shadow rounded-0">
-                <div class="card-body text-light main-font font-weight-bold pl-xl-4 p-5">
+            <div class="card bg-dark rounded-0" style="border-top: 4px solid white">
+                <div class="card-body rounded-0 text-light main-font font-weight-bold pl-xl-4 p-5">
                     <p class="lead p-2">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et rerum fugit ex quas delectus tenetur alias voluptatem dolorem
                         exercitationem reprehenderit commodi pariatur distinctio corrupti, ullam ut deleniti cupiditate voluptates!
