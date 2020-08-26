@@ -37,11 +37,10 @@
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div class="card-footer border-0">
-                    <a href="#" class="btn bg-too-dark text-light nav-link main-font font-weight-bold float-left">
+                    <a href="#" class="btn btn-too-dark nav-link main-font font-weight-bold float-left">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="p-2 text-dark">75%</span></div>
                         </div>
-                        75%
                     </a>
                     <a href="/teste" class="btn btn-light float-right main-font font-weight-bold">Continuar <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
@@ -54,11 +53,10 @@
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div class="card-footer border-0">
-                    <a href="#" class="btn bg-too-dark text-light nav-link main-font font-weight-bold float-left">
+                    <a href="#" class="btn btn-too-dark nav-link main-font font-weight-bold float-left">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="p-2 text-dark">75%</span></div>
                         </div>
-                        55%
                     </a>
                     <a href="/teste" class="btn btn-light float-right main-font font-weight-bold">Continuar <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
@@ -71,11 +69,10 @@
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div class="card-footer border-0">
-                    <a href="#" class="btn bg-too-dark text-light nav-link main-font font-weight-bold float-left">
+                    <a href="#" class="btn btn-too-dark nav-link main-font font-weight-bold float-left">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="p-2 text-dark">75%</span></div>
                         </div>
-                        25%
                     </a>
                     <a href="/teste" class="btn btn-light float-right main-font font-weight-bold">Continuar <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>

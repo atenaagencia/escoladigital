@@ -17,7 +17,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Courses and Lists
 
 Route::get('/courses', function () {
-    return view('catalogo');
+    return view('courses.catalogo');
 })->middleware('auth');
 
 Route::get('/courses/design', function () {
