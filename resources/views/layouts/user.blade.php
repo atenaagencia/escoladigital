@@ -63,7 +63,7 @@
                                     <a href="#" class="dropdown-item bg-too-dark text-light">Meu Perfil</a>
                                     <a href="#" class="dropdown-item bg-too-dark text-light">Consultoria</a>
                                     <a href="#" class="dropdown-item bg-too-dark text-light">Fóruns</a>
-                                    <a href="#" class="dropdown-item bg-too-dark text-light">Conquistas</a>
+                                    <a href="/conquistas" class="dropdown-item bg-too-dark text-light">Conquistas</a>
                                     <a class="dropdown-item bg-too-dark text-light font-weight-bold" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

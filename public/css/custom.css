@@ -4,6 +4,15 @@
     height: 64px;
 }
 
+.btn-ocean{
+    background: #FE642E !important;
+    color: #2D2C2C;
+}
+
+.btn-peaceful{
+    background: #2EFE9A !important;
+}
+
 .btn-too-dark{
     background: #2D2C2C !important;
     color: white !important;
@@ -57,4 +66,23 @@
 }
 .main-font{
     font-family: 'Alata', sans-serif;
+}
+
+
+/*person*/
+
+.pb-10{
+    padding-bottom: 6rem !important;
+}
+.container-teste{
+    padding-left: 1.5rem!important;
+    padding-right: 1.5rem!important;
+}
+
+.mt-n10, .my-n10 {
+    margin-top: -3rem !important;
+}
+
+.fa-2x {
+    font-size: 1.6em !important;
 }

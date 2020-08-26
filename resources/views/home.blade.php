@@ -1,21 +1,4 @@
 @extends('layouts.user')
-<style>
-.pb-10{
-    padding-bottom: 6rem !important;
-}
-.container-teste{
-    padding-left: 1.5rem!important;
-    padding-right: 1.5rem!important;
-}
-
-.mt-n10, .my-n10 {
-    margin-top: -3rem !important;
-}
-
-.fa-2x {
-    font-size: 1.6em !important;
-}
-</style>
 
 @section('content')
 <header class="page-header bg-dark text-light pb-10 border-bottom border-primary">
@@ -24,11 +7,14 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-auto mt-5">
                     <h1 class="page-header-title main-font">{{ $user->name }}</h1>
-                    <div class="page-header-subtitle">Example dashboard overview and content summary</div>
+                    <div class="page-header-subtitle text-warning main-font lead">
+                        <i class="fa fa-certificate"></i>
+                        Aluno Premium
+                    </div>
                 </div>
                 <div class="col-12 col-xl-auto mt-4">
                 <button class="btn btn-light main-font font-weight-bold text-uppercase p-3 mr-2">FÓRUNS</button>
-                    <button class="btn btn-warning main-font font-weight-bold text-uppercase p-3">CONSULTORIA</button>
+                    <button class="btn btn-peaceful main-font font-weight-bold text-uppercase p-3">CONSULTORIA</button>
                 </div>
             </div>
         </div>
@@ -69,7 +55,12 @@
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div class="card-footer border-0">
-                    <a href="#" class="btn bg-too-dark text-light nav-link main-font font-weight-bold float-left">59%</a>
+                    <a href="#" class="btn bg-too-dark text-light nav-link main-font font-weight-bold float-left">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        75%
+                    </a>
                     <a href="/teste" class="btn btn-light float-right main-font font-weight-bold">Continuar <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
             </div>
@@ -81,7 +72,12 @@
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div class="card-footer border-0">
-                    <a href="#" class="btn bg-too-dark text-light nav-link main-font font-weight-bold float-left">55%</a>
+                    <a href="#" class="btn bg-too-dark text-light nav-link main-font font-weight-bold float-left">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        55%
+                    </a>
                     <a href="/teste" class="btn btn-light float-right main-font font-weight-bold">Continuar <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
             </div>
@@ -93,7 +89,12 @@
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div class="card-footer border-0">
-                    <a href="#" class="btn bg-too-dark text-light nav-link main-font font-weight-bold float-left">55%</a>
+                    <a href="#" class="btn bg-too-dark text-light nav-link main-font font-weight-bold float-left">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        25%
+                    </a>
                     <a href="/teste" class="btn btn-light float-right main-font font-weight-bold">Continuar <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
             </div>
