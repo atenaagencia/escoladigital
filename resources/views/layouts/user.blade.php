@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Escola Digital</title>
+    <title>Array - Escola Digital</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -28,8 +28,8 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container">
-                <a class="navbar-brand main-font text-light" href="{{ url('/') }}">
-                    ESCOLA_DIGITAL
+                <a class="navbar-brand main-font font-weight-bold text-light" href="{{ url('/') }}">
+                    <h3 class="mt-3">Array <i class="fa fa-code"></i></h3>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,7 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto main-font lead">
+                    <ul class="navbar-nav justify-content-between main-font lead">
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
@@ -54,6 +54,21 @@
                                 </li>
                             @endif
                         @else
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#" role="button">
+                                    Catálogo
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#" role="button">
+                                    Consultoria
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#" role="button">
+                                    Fóruns
+                                </a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -61,8 +76,6 @@
 
                                 <div class="dropdown-menu rounded-0 dropdown-menu-right bg-too-dark border border-info" aria-labelledby="navbarDropdown">
                                     <a href="#" class="dropdown-item bg-too-dark text-light">Meu Perfil</a>
-                                    <a href="#" class="dropdown-item bg-too-dark text-light">Consultoria</a>
-                                    <a href="#" class="dropdown-item bg-too-dark text-light">Fóruns</a>
                                     <a href="/conquistas" class="dropdown-item bg-too-dark text-light">Conquistas</a>
                                     <a class="dropdown-item bg-too-dark text-light font-weight-bold" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

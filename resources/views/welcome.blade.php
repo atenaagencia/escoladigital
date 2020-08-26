@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Escola digital</title>
+        <title>Array - Escola Digital</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -93,7 +93,7 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-left links">
-                    <a href="#">ESCOLA_DIGITAL</a>
+                    <a href="#" style="text-transform: capitalize;">Array <i class="fa fa-code"></i></a>
                 </div>
                 <div class="top-right links">
                     @auth

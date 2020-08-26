@@ -13,8 +13,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-xl-auto mt-4">
-                <button class="btn btn-light main-font font-weight-bold text-uppercase p-3 mr-2">FÓRUNS</button>
-                    <button class="btn btn-peaceful main-font font-weight-bold text-uppercase p-3">CONSULTORIA</button>
+                    <button class="btn btn-peaceful main-font font-weight-bold text-uppercase p-3">LOREM</button>
                 </div>
             </div>
         </div>
@@ -118,6 +117,13 @@
             </div>
         </div>
     </div>
+
+    <h1 class="page-header-title main-font text-light font-weight-bold py-4">Ficou com duvida na aula? <span class="text-warning">Podemos te ajudar</span>.</h1>
+
+    <p class="lead text-light py-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et rerum fugit ex quas delectus tenetur alias voluptatem dolorem!
+    </p>
+    <a href="#" class="btn btn-peaceful main-font font-weight-bold">Solicitar Consultoria</a>
 
 </div>
 @endsection

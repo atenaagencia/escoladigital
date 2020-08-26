@@ -29,7 +29,7 @@
                         </div>
                         <div class="col-xl-3 col-xxl-12 bg-gradient-primary-to-secondary p-4 m-0 border-0">
                             <div class="text-center p-xl-3 m-0 px-4 mb-4 mb-xl-0 mb-xxl-4 border-0">
-                                <h1 class="display-4 font-weight-bold main-font text-light">29%</h1>
+                                <h1 class="display-4 font-weight-bold main-font text-light"><i class="fa fa-2x fa-trophy text-warning"></i></h1>
                             </div>
                         </div>
                     </div>

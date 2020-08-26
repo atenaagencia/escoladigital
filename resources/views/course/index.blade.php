@@ -103,5 +103,13 @@ main.player{
         </div>
     </div>
 
+    <h1 class="page-header-title main-font text-light font-weight-bold py-2">Está com dificuldade? <span class="text-warning">Podemos te ajudar</span>.</h1>
+
+    <p class="lead text-light py-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et rerum fugit ex quas delectus tenetur alias voluptatem dolorem!
+    </p>
+    <a href="#" class="btn btn-peaceful main-font font-weight-bold">Solicitar Consultoria</a>
+
+
 </div>
 @endsection
