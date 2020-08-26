@@ -39,4 +39,8 @@ Route::get('/conquistas', function () {
     return view('student.conquistas');
 })->middleware('auth');
 
+Route::get('/plans', function () {
+    return view('student.plans.index');
+})->middleware('auth');
+
 // Route::resource('course', 'CourseController')->middleware('auth');
