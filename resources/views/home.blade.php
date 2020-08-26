@@ -12,8 +12,12 @@
                         Aluno Premium
                     </div>
                 </div>
-                <div class="col-12 col-xl-auto mt-4">
-                    <button class="btn btn-peaceful main-font font-weight-bold text-uppercase p-3">LOREM</button>
+                <div class="col-auto mt-5">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-transparent main-font">
+                            <li class="breadcrumb-item active" aria-current="page">Início</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
         </div>

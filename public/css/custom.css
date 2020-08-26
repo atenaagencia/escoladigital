@@ -86,3 +86,22 @@
 .fa-2x {
     font-size: 1.6em !important;
 }
+
+/*breadcrumbs*/
+
+.breadcrumb-item a{
+    color: white !important;
+    font-size: 12pt !important;
+}
+
+.breadcrumb-item.active{
+    color: #cdcdcd !important;
+    font-size: 12pt !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: ">" !important;
+}

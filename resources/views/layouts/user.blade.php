@@ -55,7 +55,7 @@
                             @endif
                         @else
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="#" role="button">
+                                <a class="nav-link text-light" href="/catalogo" role="button">
                                     Catálogo
                                 </a>
                             </li>
