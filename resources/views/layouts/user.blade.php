@@ -95,13 +95,13 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4" style="margin-bottom: 70px !important">
             @yield('content')
         </main>
     </div>
-    <footer class="footer p-5 bg-dark mt-5">
-        <div class="container">
-            <p class="lead main-font text-light text-uppercase">Escola_digital | 2020.</p>
+    <footer class="footer sticky bg-dark">
+        <div class="container text-center p-2">
+            <p class="lead main-font text-light">Array | 2020.</p>
         </div>
     </footer>
 </body>
