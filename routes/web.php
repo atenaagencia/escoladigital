@@ -24,6 +24,10 @@ Route::get('/courses/design', function () {
     return view('courses.design.index');
 })->middleware('auth');
 
+Route::get('/courses/design/interface', function () {
+    return view('courses.design.des_interface.index');
+})->middleware('auth');
+
 
 // Student
 
