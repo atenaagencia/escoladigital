@@ -1,9 +1,9 @@
 @extends('layouts.user')
 
 @section('content')
-<header class="page-header bg-dark text-light pb-10 border-bottom border-primary">
+<header class="page-header bg-dark text-light pb-5">
     <div class="container">
-        <div class="page-header-content pt-4">
+        <div class="page-header-content">
             <div class="row align-items-center justify-content-between">
                 <div class="col-auto mt-5">
                     <h1 class="page-header-title main-font">{{ $user->name }}</h1>
@@ -15,7 +15,8 @@
                 <div class="col-auto mt-5">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb bg-transparent main-font">
-                            <li class="breadcrumb-item active" aria-current="page">Início</li>
+                            <li class="breadcrumb-item"><a href="/">Array</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Inicio</li>
                         </ol>
                     </nav>
                 </div>
@@ -24,32 +25,10 @@
     </div>
 </header>
 
-<div class="container mt-n10">
-    <div class="row">
-        <div class="col-xxl-4 col-xl-12 mb-4">
-            <div class="card h-100 border-0 rounded-0">
-                <div class="card-body h-100 d-flex flex-column justify-content-center p-0 border-0">
-                    <div class="row align-items-center p-0 m-0">
-                        <div class="col-xl-9 col-xxl-12 p-4 m-0 border-0">
-                            <div class="text-left p-xl-1 m-0 px-4 mb-4 mb-xl-0 mb-xxl-4 border-0">
-                                <h1 class="text-primary">Bem vindo de volta!</h1>
-                                <p class="text-gray-700 mb-0">It's time to get started! View new opportunities now, or continue on your previous work.</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-xxl-12 bg-gradient-primary-to-secondary p-4 m-0 border-0">
-                            <div class="text-center p-xl-3 m-0 px-4 mb-4 mb-xl-0 mb-xxl-4 border-0">
-                                <h1 class="display-4 font-weight-bold main-font text-light">29%</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- MEUS CURSOS SECTION-->
 
-    <!-- MEUS CURSOS SECTION-->
+<div class="container mt-4">
     <h1 class="page-header-title main-font text-light mt-3 font-weight-bold py-2">Meus Cursos</h1>
-
     <div class="row">
         <div class="col-xxl-4 col-xl-4 mb-2 py-4">
             <div class="card bg-gray" style="border-top: 5px solid yellow !important">

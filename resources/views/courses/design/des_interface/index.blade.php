@@ -12,8 +12,8 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb bg-transparent main-font">
                             <li class="breadcrumb-item"><a href="{{asset('home')}}">Inicio</a></li>
-                            <li class="breadcrumb-item"><a href="#">Cursos</a></li>
-                            <li class="breadcrumb-item"><a href="#">Design</a></li>
+                            <li class="breadcrumb-item"><a href="/courses">Cursos</a></li>
+                            <li class="breadcrumb-item"><a href="/courses/design">Design</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Design de Interface</li>
                         </ol>
                     </nav>
@@ -37,16 +37,20 @@
         </div>
         <div class="col-xxl-6 col-xl-6 py-4">
             <div class="card h-100 bg-gray">
-                <div class="card-body main-font text-light pl-xl-4 pt-xl-0">
-                    <h2 class="py-4 card-title">Conteúdo do Curso</h2>
-                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Tempora facere incidunt impedit dignissimos saepe rerum ad odit, minima cum ipsa nobis amet nam? 
-                    Incidunt molestias sed tempore, ipsam a consequuntur.</p>
+                <div class="card-body main-font text-light pl-xl-4 pt-xl-2">
+                    <h2 class="mb-2 p-3 card-title">Conteúdo do Curso</h2>
+                    <ul class="list-group list-group-flush bg-transparent text-light p-3">
+                        <li class="lead ml-3">Cras justo odio</li>
+                        <li class="lead ml-3">Dapibus ac facilisis in</li>
+                        <li class="lead ml-3">Morbi leo risus</li>
+                        <li class="lead ml-3">Porta ac consectetur ac</li>
+                        <li class="lead ml-3">Vestibulum at eros</li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="col-xxl-6 col-xl-6 py-4">
-            <div class="card h-100 bg-gray">
+            <div class="card h-100 bg-transparent border-success">
                 <div class="card-body main-font text-light pl-xl-4 pt-xl-0">
                     <h2 class="py-4 card-title">O que preciso saber antes de começar:</h2>
                     <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
