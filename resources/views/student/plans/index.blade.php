@@ -77,12 +77,12 @@
         </div>
     </div><!--row-->
 
-    <h1 class="page-header-title main-font text-light font-weight-bold mt-5 mb-3">Na dúvida sobre qual plano escolher? <span class="text-warning">Podemos te ajudar</span>.</h1>
+    <h1 class="page-header-title main-font col-xl-10 col-sm-12 p-0 text-light font-weight-bold mt-5 mb-3">Quer solicitar a consultoria sem trocar de plano? <span class="text-warning">Podemos te ajudar</span>.</h1>
 
     <p class="lead text-light py-3">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et rerum fugit ex quas delectus tenetur alias voluptatem dolorem!
     </p>
-    <a href="#" class="btn btn-peaceful main-font font-weight-bold">Solicitar Consultoria</a>
+    <a href="#" class="btn btn-warning main-font font-weight-bold">Solicitar Consultoria</a>
 
 </div>
 @endsection
