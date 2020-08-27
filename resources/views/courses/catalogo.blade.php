@@ -54,7 +54,7 @@
             <div class="card h-100 bg-gray">
                 <div class="card-header p-5" style="background: url('https://storage.googleapis.com/gd-wagtail-prod-assets/original_images/io19_designguide_hero_C_Share_UbDlrD3.png') no-repeat center center fixed; background-size: cover;"></div>
                 <div class="card-body main-font text-light pl-xl-4 pt-xl-0 p-5">
-                    <a href="/courses/design" target="blank" class="text-light"><h2 class="font-weight-bold py-4 card-title">Design</h2></a>
+                    <a href="/courses/design" class="text-light"><h2 class="font-weight-bold py-4 card-title">Design</h2></a>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
             </div>
@@ -63,7 +63,7 @@
             <div class="card h-100 bg-gray">
                 <div class="card-header p-5" style="background: url('https://storage.googleapis.com/gd-wagtail-prod-assets/original_images/io19_designguide_hero_C_Share_UbDlrD3.png') no-repeat center center fixed; background-size: cover;"></div>
                 <div class="card-body main-font text-light pl-xl-4 pt-xl-0 p-5">
-                    <a href="/courses/development" target="blank" class="text-light"><h2 class="font-weight-bold py-4 card-title">Desenvolvimento</h2></a>
+                    <a href="/courses/development" class="text-light"><h2 class="font-weight-bold py-4 card-title">Desenvolvimento</h2></a>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
             </div>
@@ -72,7 +72,7 @@
             <div class="card h-100 bg-gray">
                 <div class="card-header p-5" style="background: url('https://storage.googleapis.com/gd-wagtail-prod-assets/original_images/io19_designguide_hero_C_Share_UbDlrD3.png') no-repeat center center fixed; background-size: cover;"></div>
                 <div class="card-body main-font text-light pl-xl-4 pt-xl-0 p-5">
-                    <a href="/courses/marketing" target="blank" class="text-light"><h2 class="font-weight-bold py-4 card-title">Marketing Digital</h2></a>
+                    <a href="/courses/marketing" class="text-light"><h2 class="font-weight-bold py-4 card-title">Marketing Digital</h2></a>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
             </div>

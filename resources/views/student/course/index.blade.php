@@ -31,7 +31,7 @@ main.player{
 </style>
 
 @section('content')
-<header class="page-header bg-dark text-light pb-10">
+<header class="page-header text-light pb-10" style="background: #1C1C1C;">
     <div class="container">
         <div class="page-header-content pt-4">
             <div class="row align-items-center justify-content-between">
@@ -53,25 +53,90 @@ main.player{
 </header>
 
 <div class="container mt-n10">
+    
     <div class="row">
-        <div class="col-xxl-4 col-xl-12 mb-4">
+        <div class="col-xxl-12 col-xl-12 mb-4">
             <div class="card h-100 border-0 rounded-0">
                 <div class="card-body h-100 d-flex flex-column justify-content-center p-0 border-0">
                     <div class="row align-items-top bg-gray p-0 m-0 shadow border-0">
-                        <div class="col-xl-8 col-xxl-8 p-0 m-0 border-0 rounded">
+                        <div class="col-xl-12 col-xxl-12 p-0 m-0 border-0 rounded">
                             <main class="player">
-                                <!-- <p>A video!</p> -->
                                 <video src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/h264.mov" controls></video>
                             </main>
                         </div>
-                        <div class="h-100 col-xl-4 col-xxl-4 p-0 m-0 border-0 rounded">
-                            <h1 class="page-header-title main-font text-light font-weight-bold p-3">Playlist</h1>
-                            <ul class="list-group list-group-flush py-3 p-3">
-                                <li class="list-group-item bg-transparent border-light text-light main-font">Cras justo odio</li>
-                                <li class="list-group-item bg-transparent border-light text-light main-font">Dapibus ac facilisis in</li>
-                                <li class="list-group-item bg-transparent border-light text-light main-font">Morbi leo risus</li>
-                                <li class="list-group-item bg-transparent border-light text-light main-font">Porta ac consectetur ac</li>
-                                <li class="list-group-item bg-transparent border-light text-light main-font">Vestibulum at eros</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="h-100 col-12 p-3">
+            <h1 class="page-header-title main-font text-light font-weight-bold pb-4">Playlist</h1>
+            <div id="accordion">
+                <div class="card bg-gray">
+                    <div class="card-header" id="headingOne" style="background: #1C1C1C;">
+                        <h5 class="mb-0">
+                            <button class="btn btn-block btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="float-left main-font font-weight-bold text-light"><h3>Conceitos Básicos</h3></span>
+                                <div class="float-right ml-auto">
+                                    <i class="fas fa-2x fa-bullseye text-light"></i>
+                                </div>
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li><a href="" class="font-weight-bold text-light main-font lead">Aula 01: Lorem Ipsum</a></li>
+                                <li><a href="" class="font-weight-bold text-light main-font lead">Aula 01: Lorem Ipsum</a></li>
+                                <li><a href="" class="font-weight-bold text-light main-font lead">Aula 01: Lorem Ipsum</a></li>
+                                <li><a href="" class="font-weight-bold text-light main-font lead">Aula 01: Lorem Ipsum</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-gray">
+                    <div class="card-header" id="headingTwo" style="background: #1C1C1C;">
+                        <h5 class="mb-0">
+                            <button class="btn btn-block btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="float-left main-font font-weight-bold text-light"><h3>Conceitos Avançados</h3></span>
+                                <div class="float-right ml-auto">
+                                    <i class="fas fa-2x fa-bullseye text-light"></i>
+                                </div>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li><a href="" class="font-weight-bold text-light main-font lead">Aula 01: Lorem Ipsum</a></li>
+                                <li><a href="" class="font-weight-bold text-light main-font lead">Aula 01: Lorem Ipsum</a></li>
+                                <li><a href="" class="font-weight-bold text-light main-font lead">Aula 01: Lorem Ipsum</a></li>
+                                <li><a href="" class="font-weight-bold text-light main-font lead">Aula 01: Lorem Ipsum</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-gray">
+                    <div class="card-header" id="headingThree" style="background: #1C1C1C;">
+                        <h5 class="mb-0">
+                            <button class="btn btn-block btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span class="float-left main-font font-weight-bold text-light"><h3>Lorem Ipsum</h3></span>
+                                <div class="float-right ml-auto">
+                                    <i class="fas fa-2x fa-bullseye text-light"></i>
+                                </div>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li><a href="" class="font-weight-bold text-light main-font lead">Aula 01: Lorem Ipsum</a></li>
+                                <li><a href="" class="font-weight-bold text-light main-font lead">Aula 01: Lorem Ipsum</a></li>
+                                <li><a href="" class="font-weight-bold text-light main-font lead">Aula 01: Lorem Ipsum</a></li>
+                                <li><a href="" class="font-weight-bold text-light main-font lead">Aula 01: Lorem Ipsum</a></li>
                             </ul>
                         </div>
                     </div>
@@ -89,7 +154,7 @@ main.player{
         </div>
         <div class="float-right row">
             <div class="mr-3">
-                <p class="lead main-font font-weight-bold text-light">Avalie esta aula:</p>
+                <p class="lead main-font font-weight-bold text-light">Avalie este curso:</p>
             </div>
             <div class="rating">
                 <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
@@ -123,7 +188,6 @@ main.player{
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et rerum fugit ex quas delectus tenetur alias voluptatem dolorem!
     </p>
     <a href="#" class="btn btn-peaceful main-font font-weight-bold">Solicitar Consultoria</a>
-
 
 </div>
 @endsection
