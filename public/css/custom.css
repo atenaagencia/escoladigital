@@ -23,7 +23,6 @@
     color: white !important;
 }
 
-
 .btn-custom-2{
     color: white !important;
     /* background: rgb(0, 86, 246); */
@@ -61,6 +60,13 @@
 .bg-purple{
     background: #C102A5;
 }
+
+
+.bg-dev-course{
+    background: url('https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260') no-repeat center center fixed; 
+    /* background-size: cover;  */
+}
+
 .border-purple{
     border: 2px solid #C102A5 !important;
 }
@@ -68,6 +74,12 @@
     font-family: 'Alata', sans-serif;
 }
 
+
+/*text*/
+
+.text-shadow{
+    text-shadow: 2px 2px 9px #3f3f3f;
+}
 
 /*person*/
 

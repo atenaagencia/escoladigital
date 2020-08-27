@@ -24,14 +24,10 @@ main.player{
 .mt-n10, .my-n10 {
     margin-top: -3rem !important;
 }
-
-.fa-2x {
-    font-size: 1.6em !important;
-}
 </style>
 
 @section('content')
-<header class="page-header text-light pb-10" style="background: #1C1C1C;">
+<header class="page-header text-light pb-10 bg-dev-course">
     <div class="container">
         <div class="page-header-content pt-4">
             <div class="row align-items-center justify-content-between">
@@ -41,9 +37,9 @@ main.player{
                 </div>
                 <div class="col-auto mt-5">
                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb bg-transparent main-font">
-                            <li class="breadcrumb-item"><a href="/">Meus Cursos</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Programador Full Stack</li>
+                        <ol class="breadcrumb bg-light main-font">
+                            <li class="breadcrumb-item"><a href="/"><span class="text-dark font-weight-bold">Meus Cursos</span></a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><span class="text-dark">Programador Full Stack</span></li>
                         </ol>
                     </nav>
                 </div>
@@ -80,7 +76,7 @@ main.player{
                             <button class="btn btn-block btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 <span class="float-left main-font font-weight-bold text-light"><h3>Conceitos Básicos</h3></span>
                                 <div class="float-right ml-auto">
-                                    <i class="fas fa-2x fa-bullseye text-light"></i>
+                                    <span class="main-font font-weight-bold lead text-light mr-3">40%</span> <i class="fa fa-2x fa-angle-down text-light"></i>
                                 </div>
                             </button>
                         </h5>
@@ -103,7 +99,7 @@ main.player{
                             <button class="btn btn-block btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 <span class="float-left main-font font-weight-bold text-light"><h3>Conceitos Avançados</h3></span>
                                 <div class="float-right ml-auto">
-                                    <i class="fas fa-2x fa-bullseye text-light"></i>
+                                    <span class="main-font font-weight-bold lead text-light mr-3">40%</span> <i class="fa fa-2x fa-angle-down text-light"></i>
                                 </div>
                             </button>
                         </h5>
@@ -125,7 +121,7 @@ main.player{
                             <button class="btn btn-block btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 <span class="float-left main-font font-weight-bold text-light"><h3>Lorem Ipsum</h3></span>
                                 <div class="float-right ml-auto">
-                                    <i class="fas fa-2x fa-bullseye text-light"></i>
+                                    <span class="main-font font-weight-bold lead text-light mr-3">40%</span> <i class="fa fa-2x fa-angle-down text-light"></i>
                                 </div>
                             </button>
                         </h5>
