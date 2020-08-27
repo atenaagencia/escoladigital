@@ -35,6 +35,10 @@ Route::get('/teste', function () {
     return view('student.course.index');
 })->middleware('auth');
 
+Route::get('/assistance', function () {
+    return view('student.assistance.index');
+})->middleware('auth');
+
 Route::get('/conquistas', function () {
     return view('student.conquistas');
 })->middleware('auth');

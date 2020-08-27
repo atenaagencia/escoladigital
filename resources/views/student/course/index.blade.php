@@ -37,11 +37,15 @@ main.player{
             <div class="row align-items-center justify-content-between">
                 <div class="col-auto mt-5">
                     <h1 class="page-header-title main-font text-light font-weight-bold py-2">Aula 05: Métodos e Requisições</h1>
-                    <div class="page-header-subtitle">Programador Full Stack</div>
+                    <div class="page-header-subtitle">Lorem ipsum</div>
                 </div>
-                <div class="col-12 col-xl-auto mt-4">
-                    <button class="btn btn-too-dark main-font font-weight-bold text-uppercase p-3 mr-2">Anterior</button>
-                    <button class="btn btn-too-success main-font font-weight-bold text-uppercase p-3">Próximo</button>
+                <div class="col-auto mt-5">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-transparent main-font">
+                            <li class="breadcrumb-item"><a href="/">Meus Cursos</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Programador Full Stack</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -53,12 +57,22 @@ main.player{
         <div class="col-xxl-4 col-xl-12 mb-4">
             <div class="card h-100 border-0 rounded-0">
                 <div class="card-body h-100 d-flex flex-column justify-content-center p-0 border-0">
-                    <div class="row align-items-center p-0 m-0">
-                        <div class="col-xl-12 col-xxl-12 p-0 m-0 border-0">
+                    <div class="row align-items-top bg-gray p-0 m-0 shadow border-0">
+                        <div class="col-xl-8 col-xxl-8 p-0 m-0 border-0 rounded">
                             <main class="player">
                                 <!-- <p>A video!</p> -->
                                 <video src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/h264.mov" controls></video>
                             </main>
+                        </div>
+                        <div class="h-100 col-xl-4 col-xxl-4 p-0 m-0 border-0 rounded">
+                            <h1 class="page-header-title main-font text-light font-weight-bold p-3">Playlist</h1>
+                            <ul class="list-group list-group-flush py-3 p-3">
+                                <li class="list-group-item bg-transparent border-light text-light main-font">Cras justo odio</li>
+                                <li class="list-group-item bg-transparent border-light text-light main-font">Dapibus ac facilisis in</li>
+                                <li class="list-group-item bg-transparent border-light text-light main-font">Morbi leo risus</li>
+                                <li class="list-group-item bg-transparent border-light text-light main-font">Porta ac consectetur ac</li>
+                                <li class="list-group-item bg-transparent border-light text-light main-font">Vestibulum at eros</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
