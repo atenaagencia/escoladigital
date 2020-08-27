@@ -29,9 +29,9 @@
             <div class="card h-100 bg-gray">
                 <div class="card-body main-font text-light pl-xl-4 pt-xl-0">
                     <h2 class="py-4 card-title">O que vou aprender neste curso?</h2>
-                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Tempora facere incidunt impedit dignissimos saepe rerum ad odit, minima cum ipsa nobis amet nam? 
-                    Incidunt molestias sed tempore, ipsam a consequuntur.</p>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempora facere incidunt impedit dignissimos saepe rerum ad odit, minima cum ipsa nobis amet nam?
+                        Incidunt molestias sed tempore, ipsam a consequuntur.</p>
                 </div>
             </div>
         </div>
@@ -53,9 +53,9 @@
             <div class="card h-100 bg-transparent border-success">
                 <div class="card-body main-font text-light pl-xl-4 pt-xl-0">
                     <h2 class="py-4 card-title">O que preciso saber antes de começar:</h2>
-                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Tempora facere incidunt impedit dignissimos saepe rerum ad odit, minima cum ipsa nobis amet nam? 
-                    Incidunt molestias sed tempore, ipsam a consequuntur.</p>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempora facere incidunt impedit dignissimos saepe rerum ad odit, minima cum ipsa nobis amet nam?
+                        Incidunt molestias sed tempore, ipsam a consequuntur.</p>
                 </div>
             </div>
         </div>
@@ -65,8 +65,48 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-3 col-sm-6 col-auto ml-auto">
-            <button class="btn btn-block btn-too-success main-font py-3 mt-3"><h3>Adquirir agora</h3></button>
+            <button id="25" class="btn btn-block btn-too-success main-font py-3 mt-3">
+                <h3>Adquirir agora</h3>
+            </button>
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function(){  
+    
+    // Abrir o modal ao clicar no botão
+   $('#25').click( function() {
+    
+    // inicia a instância do checkout
+    var checkout = new PagarMeCheckout.Checkout({
+    encryption_key: 'ek_test_Scg6lxOflibYHbF4Kmzo5BayyQz9MP',
+    success: function(data) {
+    console.log(data);
+    },
+    error: function(err) {
+    console.log(err);
+    },
+    close: function() {
+    console.log('The modal has been closed.');
+    }
+    });
+    
+    checkout.open({
+    amount: 10000,
+    customerData: 'true',
+    createToken: 'true',
+    uiColor:'#525236',
+    items: [{
+    id: '1',
+    title: 'Design de Interface UI e U',
+    unit_price: 10000,
+    quantity: 1,
+    tangible: 'false'
+    }]
+    })
+
+    });
+});
+</script>
+
 @endsection

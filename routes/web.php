@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 
 
+
+Route::get('/pdf', 'HomeController@pdf');
+
 //general routes
 
 Route::get('/', function () {
