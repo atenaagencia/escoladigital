@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-
+//content routes
 
 Route::get('/pdf', 'HomeController@pdf');
 
@@ -16,21 +16,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+// Admin
 
-//Courses and Lists
-
-Route::get('/courses', function () {
-    return view('courses.catalogo');
-})->middleware('auth');
-
-Route::get('/courses/design', function () {
-    return view('courses.design.index');
-})->middleware('auth');
-
-Route::get('/courses/design/interface', function () {
-    return view('courses.design.des_interface.index');
-})->middleware('auth');
-
+Route::get('/admin', function() {
+    return view('admin.index');
+});
 
 // Student
 
@@ -51,3 +41,17 @@ Route::get('/plans', function () {
 })->middleware('auth');
 
 // Route::resource('course', 'CourseController')->middleware('auth');
+
+//Courses and Lists
+
+Route::get('/courses', function () {
+    return view('courses.catalogo');
+})->middleware('auth');
+
+Route::get('/courses/design', function () {
+    return view('courses.design.index');
+})->middleware('auth');
+
+Route::get('/courses/design/interface', function () {
+    return view('courses.design.des_interface.index');
+})->middleware('auth');
