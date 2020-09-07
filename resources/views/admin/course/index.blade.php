@@ -27,7 +27,7 @@
     
     <div class="row py-4 p-3">
         <h1 class="page-header-title main-font text-light font-weight-bold">Cursos</h1>
-        <a href="#" class="btn btn-success ml-auto col-lg-2 main-font h1">Novo Curso</a>
+        <a href="/admin/course/new" class="btn btn-success ml-auto col-lg-2 main-font h1">Novo Curso</a>
     </div>
 
     <div class="row">
@@ -51,9 +51,9 @@
                                     <td>Photoshop CS6</td>
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-dark"><i class="fa fa-eye"></i></button>
-                                            <button type="button" class="btn btn-dark"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-dark"><i class="fa fa-trash"></i></button>
+                                            <a href="/admin/course/show" class="btn btn-dark"><i class="fa fa-eye"></i></a>
+                                            <a href="/admin/course/edit" class="btn btn-dark"><i class="fa fa-edit"></i></a>
+                                            <a href="#" class="btn btn-dark"><i class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
                                 </tr>
@@ -63,9 +63,9 @@
                                     <td>Photoshop CS6</td>
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-dark"><i class="fa fa-eye"></i></button>
-                                            <button type="button" class="btn btn-dark"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-dark"><i class="fa fa-trash"></i></button>
+                                            <a href="/admin/course/show" class="btn btn-dark"><i class="fa fa-eye"></i></a>
+                                            <a href="/admin/course/edit" class="btn btn-dark"><i class="fa fa-edit"></i></a>
+                                            <a href="#" class="btn btn-dark"><i class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
                                 </tr>
@@ -75,9 +75,9 @@
                                     <td>Photoshop CS6</td>
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-dark"><i class="fa fa-eye"></i></button>
-                                            <button type="button" class="btn btn-dark"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-dark"><i class="fa fa-trash"></i></button>
+                                            <a href="/admin/course/show" class="btn btn-dark"><i class="fa fa-eye"></i></a>
+                                            <a href="/admin/course/edit" class="btn btn-dark"><i class="fa fa-edit"></i></a>
+                                            <a href="#" class="btn btn-dark"><i class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
                                 </tr>

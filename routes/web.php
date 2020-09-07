@@ -16,6 +16,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+
+
+
 // Admin
 
 Route::get('/admin', function() {
@@ -25,6 +29,22 @@ Route::get('/admin', function() {
 Route::get('/admin/course', function() {
     return view('admin.course.index');
 });
+
+Route::get('/admin/course/new', function() {
+    return view('admin.course.create');
+});
+
+Route::get('/admin/course/show', function() {
+    return view('admin.course.show');
+});
+
+Route::get('/admin/course/edit', function() {
+    return view('admin.course.edit');
+});
+
+
+
+
 
 // Student
 
@@ -45,6 +65,11 @@ Route::get('/plans', function () {
 })->middleware('auth');
 
 // Route::resource('course', 'CourseController')->middleware('auth');
+
+
+
+
+
 
 //Courses and Lists
 
