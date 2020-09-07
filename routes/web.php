@@ -22,6 +22,10 @@ Route::get('/admin', function() {
     return view('admin.index');
 });
 
+Route::get('/admin/course', function() {
+    return view('admin.course.index');
+});
+
 // Student
 
 Route::get('/teste', function () {

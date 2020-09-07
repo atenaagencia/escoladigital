@@ -24,12 +24,12 @@
 <!-- MEUS CURSOS SECTION-->
 
 <div class="container mt-4">
-    <h1 class="page-header-title main-font text-light mt-3 font-weight-bold py-2">Geral</h1>
+    <h1 class="page-header-title main-font text-light mt-3 font-weight-bold py-3">Geral</h1>
     <div class="row">
         <div class="col-xxl-4 col-xl-4 py-3">
             <div class="card bg-gray" style="border-top: 5px solid #2EFE9A !important">
                 <div class="card-body main-font text-light">
-                    <h2 class="h-100 pl-3 font-weight-bold card-title">Cursos</h2>
+                    <a href="/admin/course" class="text-light"><h2 class="h-100 pl-3 font-weight-bold card-title">Cursos</h2></a>
                 </div>
             </div>
         </div>
