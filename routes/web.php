@@ -18,8 +18,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 
-
-
 // Admin
 
 Route::get('/admin', function() {

@@ -13,7 +13,7 @@
                         <ol class="breadcrumb bg-transparent main-font">
                             <li class="breadcrumb-item"><a href="/home">Array</a></li>
                             <li class="breadcrumb-item"><a href="/admin/course">Cursos</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Novo</li>
+                            <li class="breadcrumb-item active" aria-current="page">Editar</li>
                         </ol>
                     </nav>
                 </div>
