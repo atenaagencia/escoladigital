@@ -45,7 +45,7 @@
                                 </select>
                             </div>
                             <div class="col-4">
-                                <a href="#" class="btn btn-success btn-block">Adicionar Seção</a>
+                                <a href="#" class="btn btn-success btn-block"><i class="fa fa-plus pr-2"></i>Adicionar Seção</a>
                             </div>
                         </div>
 
@@ -99,7 +99,7 @@
                         </div>
 
                         <div class="form-group py-4">
-                            <div class="btn btn-success main-font col-lg-3 float-right py-2"><i class="fa fa-check mr-3"></i>Alterar</div>
+                            <div class="btn btn-primary main-font col-lg-3 float-right py-2">Criar</div>
                         </div>
                     </form>
                 </div>
