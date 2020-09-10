@@ -12,7 +12,8 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb bg-transparent main-font">
                             <li class="breadcrumb-item"><a href="/home">Array</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Cursos</li>
+                            <li class="breadcrumb-item"><a href="/admin/course">Cursos</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Photoshop CS6</li>
                         </ol>
                     </nav>
                 </div>
@@ -26,8 +27,8 @@
 <div class="container mt-4">
     
     <div class="row py-4 p-3">
-        <h1 class="page-header-title main-font text-light font-weight-bold">Cursos</h1>
-        <a href="/admin/course/new" class="btn btn-success ml-auto col-lg-2 main-font h1">Novo Curso</a>
+        <h1 class="page-header-title main-font text-light font-weight-bold">Photoshop CS6</h1>
+        <a href="/admin/course/content/new" class="btn btn-success ml-auto col-lg-2 main-font h1">Adicionar Conteúdo</a>
     </div>
 
     <div class="row">
@@ -39,48 +40,44 @@
                             <thead class="text-uppercase font-weight-bold">
                                 <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Categoria</th>
+                                <th scope="col">Seção</th>
                                 <th scope="col">Titulo</th>
-                                <th scope="col">Conteúdo</th>
                                 <th scope="col">Ações</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Design</td>
-                                    <td>Photoshop CS6</td>
-                                    <td><a href="/admin/course/content" class="btn btn-primary">Editar<i class="ml-3 fa fa-edit"></i></a></td>
+                                    <td>Boas Vindas</td>
+                                    <td>Aula Introdutória</td>
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic example">
-                                            <a href="/admin/course/show" class="btn btn-dark"><i class="fa fa-eye"></i></a>
-                                            <a href="/admin/course/edit" class="btn btn-dark"><i class="fa fa-edit"></i></a>
+                                            <a href="/admin/course/content/show" class="btn btn-dark"><i class="fa fa-eye"></i></a>
+                                            <a href="/admin/course/content/edit" class="btn btn-dark"><i class="fa fa-edit"></i></a>
                                             <a href="#" class="btn btn-dark"><i class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td>Design</td>
-                                    <td>Photoshop CC</td>
-                                    <td><a href="#" class="btn btn-primary">Editar<i class="ml-3 fa fa-edit"></i></a></td>
+                                    <td>Requisitos</td>
+                                    <td>Instalando Ferramentas</td>
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic example">
-                                            <a href="/admin/course/show" class="btn btn-dark"><i class="fa fa-eye"></i></a>
-                                            <a href="/admin/course/edit" class="btn btn-dark"><i class="fa fa-edit"></i></a>
+                                            <a href="/admin/course/content/show" class="btn btn-dark"><i class="fa fa-eye"></i></a>
+                                            <a href="/admin/course/content/edit" class="btn btn-dark"><i class="fa fa-edit"></i></a>
                                             <a href="#" class="btn btn-dark"><i class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
-                                    <td>Design</td>
-                                    <td>InDesign CS6</td>
-                                    <td><a href="#" class="btn btn-primary">Editar<i class="ml-3 fa fa-edit"></i></a></td>
+                                    <td>Requisitos</td>
+                                    <td>Configurando Paleta e Menus</td>
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic example">
-                                            <a href="/admin/course/show" class="btn btn-dark"><i class="fa fa-eye"></i></a>
-                                            <a href="/admin/course/edit" class="btn btn-dark"><i class="fa fa-edit"></i></a>
+                                            <a href="/admin/course/content/show" class="btn btn-dark"><i class="fa fa-eye"></i></a>
+                                            <a href="/admin/course/content/edit" class="btn btn-dark"><i class="fa fa-edit"></i></a>
                                             <a href="#" class="btn btn-dark"><i class="fa fa-trash"></i></a>
                                         </div>
                                     </td>
