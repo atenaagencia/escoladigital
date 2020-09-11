@@ -41,6 +41,16 @@
                                 @enderror
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <div class="col-md-9 mx-auto">
+                                <small>Tipo de Acesso:</small>
+                                <select name="tipo" id="" class="form-control">
+                                    <option value="" checked>Aluno</option>
+                                    <option value="admin">Administração</option>
+                                    <option value="consultor">Consultor</option>
+                                </select>
+                            </div>
+                        </div>
 
                         <div class="form-group row py-4">
                             <div class="col-md-9 mx-auto">
