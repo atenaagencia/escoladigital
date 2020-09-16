@@ -59,6 +59,24 @@ Route::get('/admin/course/content/edit', function() {
     return view('admin.course.content.cont_course_edit');
 });
 
+//admin notes : mural
+
+Route::get('/admin/note/', function() {
+    return view('admin.note.index');
+});
+
+Route::get('/admin/note/new', function() {
+    return view('admin.note.create');
+});
+
+Route::get('/admin/note/edit', function() {
+    return view('admin.note.edit');
+});
+
+Route::get('/admin/note/show', function() {
+    return view('admin.note.show');
+});
+
 
 
 
