@@ -40,6 +40,7 @@
                                 <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Data</th>
+                                <th scope="col">Categoria</th>
                                 <th scope="col">Hora</th>
                                 <th scope="col">Titulo</th>
                                 <th scope="col">Ações</th>
@@ -49,6 +50,7 @@
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>16/01/2020</td>
+                                    <td>Cursos</td>
                                     <td>20:00</td>
                                     <td>Atualização de Cursos</td>
                                     <td>
@@ -63,6 +65,7 @@
                                 <tr>
                                     <th scope="row">2</th>
                                     <td>16/01/2020</td>
+                                    <td>Geral</td>
                                     <td>20:00</td>
                                     <td>Correção de Bugs</td>
                                     <td>
@@ -77,6 +80,7 @@
                                 <tr>
                                     <th scope="row">3</th>
                                     <td>16/01/2020</td>
+                                    <td>Consultores</td>
                                     <td>20:00</td>
                                     <td>Ajuste de Horários de Consultorias</td>
                                     <td>
