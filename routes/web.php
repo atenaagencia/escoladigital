@@ -17,13 +17,13 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-
 // Admin
 
 Route::get('/admin', function() {
     return view('admin.index');
 });
+
+// Admin course
 
 Route::get('/admin/course', function() {
     return view('admin.course.index');
@@ -58,6 +58,39 @@ Route::get('/admin/course/content/show', function() {
 Route::get('/admin/course/content/edit', function() {
     return view('admin.course.content.cont_course_edit');
 });
+
+//admin student ------------------------------------------
+
+Route::get('/admin/student/', function() {
+    return view('admin.student.index');
+});
+
+Route::get('/admin/student/edit', function() {
+    return view('admin.student.edit');
+});
+
+Route::get('/admin/student/show', function() {
+    return view('admin.student.show');
+});
+
+//admin student content
+Route::get('/admin/student/content', function() {
+    return view('admin.student.content.cont_stud_index');
+});
+
+Route::get('/admin/student/content/new', function() {
+    return view('admin.student.content.cont_stud_create');
+});
+
+Route::get('/admin/student/content/show', function() {
+    return view('admin.student.content.cont_stud_show');
+});
+
+Route::get('/admin/student/content/edit', function() {
+    return view('admin.student.content.cont_stud_edit');
+});
+
+// -----------------------------------------------------//
 
 //admin plan
 
