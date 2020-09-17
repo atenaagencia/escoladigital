@@ -64,7 +64,7 @@
         <div class="col-xxl-4 col-xl-4 py-3">
             <div class="card bg-gray" style="border-top: 5px solid #2EFE9A !important">
                 <div class="card-body main-font text-light">
-                    <h2 class="h-100 pl-3 font-weight-bold card-title">Planos</h2>
+                    <a href="/admin/plan" class="text-light"><h2 class="h-100 pl-3 font-weight-bold card-title">Planos</h2></a>
                 </div>
             </div>
         </div>

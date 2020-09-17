@@ -59,6 +59,23 @@ Route::get('/admin/course/content/edit', function() {
     return view('admin.course.content.cont_course_edit');
 });
 
+//admin plan
+
+Route::get('/admin/plan/', function() {
+    return view('admin.plan.index');
+});
+
+Route::get('/admin/plan/new', function() {
+    return view('admin.plan.create');
+});
+
+Route::get('/admin/plan/edit', function() {
+    return view('admin.plan.edit');
+});
+
+Route::get('/admin/plan/show', function() {
+    return view('admin.plan.show');
+});
 
 //admin assistance
 
