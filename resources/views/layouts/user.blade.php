@@ -102,10 +102,10 @@
             @yield('content')
         </main>
     </div>
-    <footer class="footer sticky bg-dark">
+    <!-- <footer class="footer sticky bg-dark">
         <div class="container text-center p-2">
             <p class="lead main-font text-light">Array | 2020.</p>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
