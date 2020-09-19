@@ -144,10 +144,6 @@ Route::get('/admin/note/show', function() {
 });
 
 
-
-
-
-
 // Student
 
 Route::get('/teste', function () {
@@ -156,6 +152,18 @@ Route::get('/teste', function () {
 
 Route::get('/assistance', function () {
     return view('student.assistance.index');
+})->middleware('auth');
+
+Route::get('/certificate', function () {
+    return view('certificate.index');
+})->middleware('auth');
+
+Route::get('/certificate/show', function () {
+    return view('certificate.show');
+})->middleware('auth');
+
+Route::get('/certificate/edit', function () {
+    return view('certificate.edit');
 })->middleware('auth');
 
 Route::get('/conquistas', function () {
