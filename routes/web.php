@@ -74,9 +74,6 @@ Route::get('/admin/student/show', function() {
 });
 
 //admin student content
-Route::get('/admin/student/content', function() {
-    return view('admin.student.content.cont_stud_index');
-});
 
 Route::get('/admin/student/content/new', function() {
     return view('admin.student.content.cont_stud_create');

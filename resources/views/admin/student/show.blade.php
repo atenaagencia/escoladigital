@@ -28,7 +28,7 @@
 
     <div class="row py-4 p-3">
         <h1 class="page-header-title main-font text-light font-weight-bold">Aluno: Philip Santos (2005)</h1>
-        <a href="/admin/student/content/new" class="btn btn-success ml-auto col-lg-2 main-font h1">Adicionar Histórico</a>
+        <a href="/admin/student/edit" class="btn btn-success ml-auto col-lg-2 main-font h1">Editar Ficha</a>
     </div>
 
     <div class="row">

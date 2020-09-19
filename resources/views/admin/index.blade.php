@@ -91,16 +91,33 @@
         </div>
     </div><!--row-->
 
-    <h1 class="page-header-title main-font text-light mt-3 font-weight-bold py-2">Dados</h1>
+    <div class="row py-4 p-3 mt-2">
+        <h1 class="page-header-title main-font text-light font-weight-bold">Dados</h1>
+        <a href="#" class="btn btn-warning ml-auto col-md-2 col-sm-12 main-font h1"><i class="fa fa-file-pdf mr-2"></i>Relatório Completo</a>
+    </div>
 
     <div class="row">
-        <div class="col-xxl-12 col-xl-12 mb-2 py-4">
+        <div class="col-xxl-4 col-xl-4 mb-2 py-4">
             <div class="card bg-light">
-                <div class="card-body main-font font-weight-bold pl-xl-4 p-5">
-                    <p class="lead p-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et rerum fugit ex quas delectus tenetur alias voluptatem dolorem
-                        exercitationem reprehenderit commodi pariatur distinctio corrupti, ullam ut deleniti cupiditate voluptates!
-                    </p>
+                <div class="card-body main-font font-weight-bold p-4">
+                    <h2 class="h-100 pl-3 font-weight-bold card-title float-right">103</h2>
+                    <h2 class="h-100 pl-3 font-weight-bold card-title clearfix">Alunos:</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 mb-2 py-4">
+            <div class="card bg-light">
+                <div class="card-body main-font font-weight-bold p-4">
+                    <h2 class="h-100 pl-3 font-weight-bold card-title float-right">10</h2>
+                    <h2 class="h-100 pl-3 font-weight-bold card-title clearfix">Cursos:</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 mb-2 py-4">
+            <div class="card bg-light">
+                <div class="card-body main-font font-weight-bold p-4">
+                    <h2 class="h-100 pl-3 font-weight-bold card-title float-right">45</h2>
+                    <h2 class="h-100 pl-3 font-weight-bold card-title clearfix">Consultorias:</h2>
                 </div>
             </div>
         </div>

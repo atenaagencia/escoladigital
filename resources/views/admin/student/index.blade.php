@@ -51,7 +51,7 @@
                                     <th scope="row">1</th>
                                     <td>Philip Santos</td>
                                     <td>2005</td>
-                                    <td><a href="/admin/student/content" class="btn btn-primary">Editar<i class="ml-3 fa fa-edit"></i></a></td>
+                                    <td><a href="/admin/student/content/show" class="btn btn-primary">Detalhar<i class="ml-3 fa fa-eye"></i></a></td>
                                     <td>Ativo</td>
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -65,7 +65,7 @@
                                     <th scope="row">2</th>
                                     <td>Philip Santos</td>
                                     <td>2005</td>
-                                    <td><a href="/admin/student/content" class="btn btn-primary">Editar<i class="ml-3 fa fa-edit"></i></a></td>
+                                    <td><a href="/admin/student/content/show" class="btn btn-primary">Detalhar<i class="ml-3 fa fa-eye"></i></a></td>
                                     <td>Ativo</td>
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -79,7 +79,7 @@
                                     <th scope="row">3</th>
                                     <td>Philip Santos</td>
                                     <td>2005</td>
-                                    <td><a href="/admin/student/content" class="btn btn-primary">Editar<i class="ml-3 fa fa-edit"></i></a></td>
+                                    <td><a href="/admin/student/content/show" class="btn btn-primary">Detalhar<i class="ml-3 fa fa-eye"></i></a></td>
                                     <td>Ativo</td>
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic example">
