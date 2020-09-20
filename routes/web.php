@@ -19,18 +19,19 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // Admin
 
-Route::prefix('admin')->group(function () {
-    Route::get('/', function () {
-        return view('admin.index');
-    });
-    Route::resource('course', 'CourseController');
+Route::get('/admin', function () {
+    return view('admin.index');
 });
 
+Route::get('/admin/login', function () {
+    return view('admin.login');
+});
 
+// Admin course
 
-// Route::get('/admin/course', function () {
-//     return view('admin.course.index');
-// });
+Route::get('/admin/course', function () {
+    return view('admin.course.index');
+});
 
 Route::get('/admin/course/new', function () {
     return view('admin.course.create');
@@ -64,29 +65,29 @@ Route::get('/admin/course/content/edit', function () {
 
 //admin student ------------------------------------------
 
-Route::get('/admin/student/', function() {
+Route::get('/admin/student/', function () {
     return view('admin.student.index');
 });
 
-Route::get('/admin/student/edit', function() {
+Route::get('/admin/student/edit', function () {
     return view('admin.student.edit');
 });
 
-Route::get('/admin/student/show', function() {
+Route::get('/admin/student/show', function () {
     return view('admin.student.show');
 });
 
 //admin student content
 
-Route::get('/admin/student/content/new', function() {
+Route::get('/admin/student/content/new', function () {
     return view('admin.student.content.cont_stud_create');
 });
 
-Route::get('/admin/student/content/show', function() {
+Route::get('/admin/student/content/show', function () {
     return view('admin.student.content.cont_stud_show');
 });
 
-Route::get('/admin/student/content/edit', function() {
+Route::get('/admin/student/content/edit', function () {
     return view('admin.student.content.cont_stud_edit');
 });
 
@@ -94,55 +95,55 @@ Route::get('/admin/student/content/edit', function() {
 
 //admin plan
 
-Route::get('/admin/plan/', function() {
+Route::get('/admin/plan/', function () {
     return view('admin.plan.index');
 });
 
-Route::get('/admin/plan/new', function() {
+Route::get('/admin/plan/new', function () {
     return view('admin.plan.create');
 });
 
-Route::get('/admin/plan/edit', function() {
+Route::get('/admin/plan/edit', function () {
     return view('admin.plan.edit');
 });
 
-Route::get('/admin/plan/show', function() {
+Route::get('/admin/plan/show', function () {
     return view('admin.plan.show');
 });
 
 //admin assistance
 
-Route::get('/admin/assistance/', function() {
+Route::get('/admin/assistance/', function () {
     return view('admin.assistance.index');
 });
 
-Route::get('/admin/assistance/new', function() {
+Route::get('/admin/assistance/new', function () {
     return view('admin.assistance.create');
 });
 
-Route::get('/admin/assistance/edit', function() {
+Route::get('/admin/assistance/edit', function () {
     return view('admin.assistance.edit');
 });
 
-Route::get('/admin/assistance/show', function() {
+Route::get('/admin/assistance/show', function () {
     return view('admin.assistance.show');
 });
 
 //admin notes : mural
 
-Route::get('/admin/note/', function() {
+Route::get('/admin/note/', function () {
     return view('admin.note.index');
 });
 
-Route::get('/admin/note/new', function() {
+Route::get('/admin/note/new', function () {
     return view('admin.note.create');
 });
 
-Route::get('/admin/note/edit', function() {
+Route::get('/admin/note/edit', function () {
     return view('admin.note.edit');
 });
 
-Route::get('/admin/note/show', function() {
+Route::get('/admin/note/show', function () {
     return view('admin.note.show');
 });
 
