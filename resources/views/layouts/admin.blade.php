@@ -80,6 +80,7 @@
                                 <div class="dropdown-menu rounded-0 dropdown-menu-right bg-too-dark border border-info" aria-labelledby="navbarDropdown">
                                     <a href="#" class="dropdown-item bg-too-dark text-light">Meu Perfil</a>
                                     <a href="/plans" class="dropdown-item bg-too-dark text-light">Planos</a>
+                                    <a href="/certificate" class="dropdown-item bg-too-dark text-light">Certificados</a>
                                     <a href="/conquistas" class="dropdown-item bg-too-dark text-light">Conquistas</a>
                                     <a class="dropdown-item bg-too-dark text-light font-weight-bold" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
