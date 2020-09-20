@@ -21,41 +21,46 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // Admin
 
-Route::get('/admin', function() {
-    return view('admin.index');
+Route::prefix('admin')->group(function () {
+    Route::get('/', function () {
+        return view('admin.index');
+    });
+    Route::resource('course', 'CourseController');
 });
 
-Route::get('/admin/course', function() {
-    return view('admin.course.index');
-});
 
-Route::get('/admin/course/new', function() {
+
+// Route::get('/admin/course', function () {
+//     return view('admin.course.index');
+// });
+
+Route::get('/admin/course/new', function () {
     return view('admin.course.create');
 });
 
-Route::get('/admin/course/show', function() {
+Route::get('/admin/course/show', function () {
     return view('admin.course.show');
 });
 
-Route::get('/admin/course/edit', function() {
+Route::get('/admin/course/edit', function () {
     return view('admin.course.edit');
 });
 
 //Admin content course (adiciona conteúdo a um curso)
 
-Route::get('/admin/course/content', function() {
+Route::get('/admin/course/content', function () {
     return view('admin.course.content.cont_course_index');
 });
 
-Route::get('/admin/course/content/new', function() {
+Route::get('/admin/course/content/new', function () {
     return view('admin.course.content.cont_course_create');
 });
 
-Route::get('/admin/course/content/show', function() {
+Route::get('/admin/course/content/show', function () {
     return view('admin.course.content.cont_course_show');
 });
 
-Route::get('/admin/course/content/edit', function() {
+Route::get('/admin/course/content/edit', function () {
     return view('admin.course.content.cont_course_edit');
 });
 
