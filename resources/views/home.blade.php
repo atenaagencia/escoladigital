@@ -42,7 +42,7 @@ ol.breadcrumb>li.breadcrumb-item, li.breadcrumb-item:active{
     <h1 class="page-header-title main-font text-light mt-3 font-weight-bold py-4">Meus Cursos</h1>
     <div class="row">
         <div class="col-xxl-4 col-xl-4 mb-2 py-4">
-            <div class="card bg-gray" style="border-top: 5px solid yellow !important">
+            <div class="card shadow bg-gray" style="border: 1px solid; border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important">
                 <div class="card-body main-font text-light pl-xl-4 pt-xl-0 p-5">
                     <h1 class="h-100 font-weight-bold py-4 card-title">Programador Web</h1>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -50,15 +50,15 @@ ol.breadcrumb>li.breadcrumb-item, li.breadcrumb-item:active{
                 <div class="card-footer border-0">
                     <a href="#" class="btn btn-too-dark nav-link main-font font-weight-bold float-left">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="p-2 text-dark">75%</span></div>
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="p-2 text-dark">75%</span></div>
                         </div>
                     </a>
-                    <a href="/teste" class="btn btn-light float-right main-font font-weight-bold">Continuar <i class="ml-3 fa fa-angle-right"></i></a>
+                    <a href="/teste" class="btn btn-success float-right main-font font-weight-bold">Continuar <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
         <div class="col-xxl-4 col-xl-4 mb-2 py-4">
-            <div class="card bg-gray" style="border-top: 5px solid #2EFE9A !important">
+            <div class="card shadow bg-gray" style="border: 1px solid; border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important">
                 <div class="card-body main-font text-light pl-xl-4 pt-xl-0 p-5">
                     <h1 class="h-100 font-weight-bold py-4 card-title">Programador Full Stack</h1>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -66,15 +66,15 @@ ol.breadcrumb>li.breadcrumb-item, li.breadcrumb-item:active{
                 <div class="card-footer border-0">
                     <a href="#" class="btn btn-too-dark nav-link main-font font-weight-bold float-left">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="p-2 text-dark">75%</span></div>
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="p-2 text-dark">75%</span></div>
                         </div>
                     </a>
-                    <a href="/teste" class="btn btn-light float-right main-font font-weight-bold">Continuar <i class="ml-3 fa fa-angle-right"></i></a>
+                    <a href="/teste" class="btn btn-success float-right main-font font-weight-bold">Continuar <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
         <div class="col-xxl-4 col-xl-4 mb-2 py-4">
-            <div class="card h-100 bg-gray" style="border-top: 5px solid #FE642E !important">
+            <div class="card shadow h-100 bg-gray" style="border: 1px solid; border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important">
                 <div class="card-body main-font text-light pl-xl-4 pt-xl-0 p-5">
                     <h1 class="font-weight-bold py-4 card-title">Lorem Ipsum</h1>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -82,10 +82,10 @@ ol.breadcrumb>li.breadcrumb-item, li.breadcrumb-item:active{
                 <div class="card-footer border-0">
                     <a href="#" class="btn btn-too-dark nav-link main-font font-weight-bold float-left">
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="p-2 text-dark">75%</span></div>
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="p-2 text-dark">75%</span></div>
                         </div>
                     </a>
-                    <a href="/teste" class="btn btn-light float-right main-font font-weight-bold">Continuar <i class="ml-3 fa fa-angle-right"></i></a>
+                    <a href="/teste" class="btn btn-success float-right main-font font-weight-bold">Continuar <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
@@ -98,23 +98,23 @@ ol.breadcrumb>li.breadcrumb-item, li.breadcrumb-item:active{
     <div class="row">
         <div class="col-md-6 mb-4 py-4">
             <h1 class="page-header-title main-font text-light font-weight-bold py-4">Novidades</h1>
-            <div class="card bg-gray">
+            <div class="card bg-gray shadow">
                 <div class="card-body main-font font-weight-bold pl-xl-4">
                     <p class="lead text-light">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. porro repellendus maxime eius.
                     </p>
-                    <a href="/teste" class="btn btn-info float-right main-font font-weight-bold">Ver Mais <i class="ml-3 fa fa-angle-right"></i></a>
+                    <a href="/teste" class="btn btn-primary float-right main-font font-weight-bold">Ver Mais <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
         <div class="col-md-6 mb-4 py-4">
             <h1 class="page-header-title main-font text-light font-weight-bold py-4">Blog</h1>
-            <div class="card bg-gray">
+            <div class="card bg-gray shadow">
                 <div class="card-body main-font font-weight-bold pl-xl-4">
                     <p class="lead text-light">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. porro repellendus maxime eius.
                     </p>
-                    <a href="/teste" class="btn btn-info float-right main-font font-weight-bold">Ver Mais <i class="ml-3 fa fa-angle-right"></i></a>
+                    <a href="/teste" class="btn btn-primary float-right main-font font-weight-bold">Ver Mais <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
