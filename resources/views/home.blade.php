@@ -89,10 +89,20 @@ ol.breadcrumb>li.breadcrumb-item, li.breadcrumb-item:active{
                 </div>
             </div>
         </div>
-        <div class="ml-auto float-right text-right pr-xl-4">
-            <a href="#" class="lead main-font text-light">VER TODOS <i class="ml-3 fa fa-angle-right text-light pr-3"></i></a>
-        </div>
     </div><!--row-->
+    <nav aria-label="Page navigation example" class="py-4">
+        <ul class="pagination justify-content-end main-font">
+            <li class="page-item disabled">
+                <a class="page-link bg-too-dark text-light" href="#" tabindex="-1">Anterior</a>
+            </li>
+            <li class="page-item"><a class="page-link bg-too-dark text-light" href="#">1</a></li>
+            <li class="page-item"><a class="page-link bg-too-dark text-light" href="#">2</a></li>
+            <li class="page-item"><a class="page-link bg-too-dark text-light" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link bg-array text-light" href="#">Próximo</a>
+            </li>
+        </ul>
+    </nav>
 </section>
 <section class="container mt-3">
     <div class="row">
