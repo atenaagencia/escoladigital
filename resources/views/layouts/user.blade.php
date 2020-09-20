@@ -29,7 +29,7 @@
 </head>
 <body class="bg-too-dark">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-md navbar-light" style="background: #1C1C1C !important;">
             <div class="container">
                 <a class="navbar-brand main-font font-weight-bold text-light" href="{{ url('/') }}">
                     <h3 class="mt-3">Array <i class="fa fa-code"></i></h3>
@@ -99,7 +99,7 @@
             </div>
         </nav>
 
-        <main class="py-4" style="margin-bottom: 70px !important">
+        <main class="" style="margin-bottom: 70px !important">
             @yield('content')
         </main>
     </div>

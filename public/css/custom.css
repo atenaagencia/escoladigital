@@ -102,12 +102,12 @@
 /*breadcrumbs*/
 
 .breadcrumb-item a{
-    color: white !important;
+    color: white !important;;
     font-size: 12pt !important;
 }
 
 .breadcrumb-item.active{
-    color: #cdcdcd !important;
+    color: #cdcdcd !important;;
     font-size: 12pt !important;
 }
 

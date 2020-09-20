@@ -1,21 +1,32 @@
 @extends('layouts.user')
 
+<style>
+ol.breadcrumb>li.breadcrumb-item, li.breadcrumb-item:active{
+    color: white !important;
+}
+
+.breadcrumb-item.active{
+    font-weight: bold !important;
+}
+</style>
 @section('content')
-<header class="page-header bg-dark text-light pb-5">
+<header class="page-header text-dark pb-5" style="background: linear-gradient(to left, #B06AB3, #4568DC) !important">
     <div class="container">
         <div class="page-header-content">
             <div class="row align-items-center justify-content-between">
                 <div class="col-auto mt-5">
-                    <h1 class="page-header-title main-font">{{ $user->name }}</h1>
-                    <div class="page-header-subtitle text-warning main-font lead">
-                        <i class="fa fa-certificate"></i>
-                        Aluno Premium
+                    <h1 class="page-header-title text-light font-weight-bold main-font">{{ $user->name }}</h1>
+                    <div class="page-header-subtitle main-font lead mt-4">
+                        <a href="/conquistas" class="text-light bg-dark nav-link rounded">
+                            <i class="fa fa-certificate text-warning pr-3"></i>
+                            Aluno Premium
+                        </a>
                     </div>
                 </div>
                 <div class="col-auto mt-5">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb bg-transparent main-font">
-                            <li class="breadcrumb-item"><a href="/">Array</a></li>
+                            <li class="breadcrumb-item"><a href="/" class="text-dark">Array</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Inicio</li>
                         </ol>
                     </nav>
@@ -27,8 +38,8 @@
 
 <!-- MEUS CURSOS SECTION-->
 
-<div class="container mt-4">
-    <h1 class="page-header-title main-font text-light mt-3 font-weight-bold py-2">Meus Cursos</h1>
+<section class="container mt-4">
+    <h1 class="page-header-title main-font text-light mt-3 font-weight-bold py-4">Meus Cursos</h1>
     <div class="row">
         <div class="col-xxl-4 col-xl-4 mb-2 py-4">
             <div class="card bg-gray" style="border-top: 5px solid yellow !important">
@@ -82,28 +93,31 @@
             <a href="#" class="lead main-font text-light">VER TODOS <i class="ml-3 fa fa-angle-right text-light pr-3"></i></a>
         </div>
     </div><!--row-->
-
-    <h1 class="page-header-title main-font text-light mt-3 font-weight-bold py-2">Novidades</h1>
-
+</section>
+<section class="container mt-3">
     <div class="row">
-        <div class="col-xxl-12 col-xl-12 mb-4 py-4">
-            <div class="card bg-light">
-                <div class="card-body main-font font-weight-bold pl-xl-4 p-5">
-                    <p class="lead p-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et rerum fugit ex quas delectus tenetur alias voluptatem dolorem
-                        exercitationem reprehenderit commodi pariatur distinctio corrupti, ullam ut deleniti cupiditate voluptates!
+        <div class="col-md-6 mb-4 py-4">
+            <h1 class="page-header-title main-font text-light font-weight-bold py-4">Novidades</h1>
+            <div class="card bg-gray">
+                <div class="card-body main-font font-weight-bold pl-xl-4">
+                    <p class="lead text-light">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. porro repellendus maxime eius.
                     </p>
+                    <a href="/teste" class="btn btn-info float-right main-font font-weight-bold">Ver Mais <i class="ml-3 fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4 py-4">
+            <h1 class="page-header-title main-font text-light font-weight-bold py-4">Blog</h1>
+            <div class="card bg-gray">
+                <div class="card-body main-font font-weight-bold pl-xl-4">
+                    <p class="lead text-light">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. porro repellendus maxime eius.
+                    </p>
+                    <a href="/teste" class="btn btn-info float-right main-font font-weight-bold">Ver Mais <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
     </div>
-
-    <h1 class="page-header-title main-font text-light font-weight-bold py-4">Ficou com duvida na aula? <span class="text-warning">Podemos te ajudar</span>.</h1>
-
-    <p class="lead text-light py-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et rerum fugit ex quas delectus tenetur alias voluptatem dolorem!
-    </p>
-    <a href="#" class="btn btn-peaceful main-font font-weight-bold">Solicitar Consultoria</a>
-
-</div>
+</section>
 @endsection
