@@ -83,6 +83,9 @@
 .text-shadow{
     text-shadow: 2px 2px 9px #3f3f3f;
 }
+.text-array{
+    color: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;
+}
 
 /*person*/
 

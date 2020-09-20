@@ -6,15 +6,22 @@
     max-width: 900px !important;
     padding-top: 30px;  
 }
+
+.card-content-custom{
+    border-bottom: 20px solid !important; 
+    border: 1px solid;
+    border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;
+}
+
 </style>
 
 @section('content')
 <div class="container main-font" id="login">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <h1 class="text-dark main-font display-4 py-4">Acesse sua conta.</h1>
+            <h1 class="text-array text-center main-font display-4 py-5">Acesse sua conta.</h1>
             <div class="card">
-                <div class="card-body p-4">
+                <div class="card-body card-content-custom p-4">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
