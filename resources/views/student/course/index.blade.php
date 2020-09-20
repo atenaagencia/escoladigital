@@ -24,6 +24,23 @@ main.player{
 .mt-n10, .my-n10 {
     margin-top: -3rem !important;
 }
+
+.card-header{
+    border-left: 15px solid; 
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    border-right: 0 !important;
+    border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;
+    background: #1C1C1C !important;
+}
+.card-content{
+    border-top: 3px solid !important; 
+    border-left: 0 !important;
+    border-bottom: 0 !important;
+    border-right: 0 !important;
+    border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;
+    background: #1C1C1C !important;
+}
 </style>
 
 @section('content')
@@ -68,15 +85,15 @@ main.player{
 
     <div class="row">
         <div class="h-100 col-12 p-3">
-            <h1 class="page-header-title main-font text-light font-weight-bold pb-4">Playlist</h1>
+            <h1 class="page-header-title main-font text-light font-weight-bold py-4">Playlist</h1>
             <div id="accordion">
                 <div class="card bg-gray">
-                    <div class="card-header" id="headingOne" style="background: #1C1C1C;">
+                    <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
                             <button class="btn btn-block btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 <span class="float-left main-font font-weight-bold text-light"><h3>Conceitos Básicos</h3></span>
                                 <div class="float-right ml-auto">
-                                    <span class="main-font font-weight-bold lead text-light mr-3">40%</span> <i class="fa fa-2x fa-angle-down text-light"></i>
+                                    <span class="main-font font-weight-bold lead text-light mr-3">40%</span> <i class="fa fa-2x fa-caret-down text-light"></i>
                                 </div>
                             </button>
                         </h5>
@@ -94,12 +111,12 @@ main.player{
                     </div>
                 </div>
                 <div class="card bg-gray">
-                    <div class="card-header" id="headingTwo" style="background: #1C1C1C;">
+                    <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
                             <button class="btn btn-block btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 <span class="float-left main-font font-weight-bold text-light"><h3>Conceitos Avançados</h3></span>
                                 <div class="float-right ml-auto">
-                                    <span class="main-font font-weight-bold lead text-light mr-3">40%</span> <i class="fa fa-2x fa-angle-down text-light"></i>
+                                    <span class="main-font font-weight-bold lead text-light mr-3">40%</span> <i class="fa fa-2x fa-caret-down text-light"></i>
                                 </div>
                             </button>
                         </h5>
@@ -116,12 +133,12 @@ main.player{
                     </div>
                 </div>
                 <div class="card bg-gray">
-                    <div class="card-header" id="headingThree" style="background: #1C1C1C;">
+                    <div class="card-header" id="headingThree">
                         <h5 class="mb-0">
                             <button class="btn btn-block btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 <span class="float-left main-font font-weight-bold text-light"><h3>Lorem Ipsum</h3></span>
                                 <div class="float-right ml-auto">
-                                    <span class="main-font font-weight-bold lead text-light mr-3">40%</span> <i class="fa fa-2x fa-angle-down text-light"></i>
+                                    <span class="main-font font-weight-bold lead text-light mr-3">40%</span> <i class="fa fa-2x fa-caret-down text-light"></i>
                                 </div>
                             </button>
                         </h5>
@@ -141,7 +158,7 @@ main.player{
         </div>
     </div>
 
-    <div class="container py-3">
+    <div class="container py-4">
         <div class="float-left">
             <a href="{{asset('home')}}" class="lead text-light">
                 <i class="fa fa-arrow-left mr-3"></i>
@@ -167,7 +184,7 @@ main.player{
 
     <div class="row">
         <div class="col-xxl-12 col-xl-12 mb-4 py-4">
-            <div class="card bg-dark rounded-0" style="border-top: 4px solid white">
+            <div class="card card-content bg-dark rounded-0">
                 <div class="card-body rounded-0 text-light main-font font-weight-bold pl-xl-4 p-5">
                     <p class="lead p-2">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et rerum fugit ex quas delectus tenetur alias voluptatem dolorem

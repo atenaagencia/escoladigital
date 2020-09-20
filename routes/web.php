@@ -150,7 +150,7 @@ Route::get('/admin/note/show', function() {
 
 // Student
 
-Route::get('/teste', function () {
+Route::get('/student/course', function () {
     return view('student.course.index');
 })->middleware('auth');
 
