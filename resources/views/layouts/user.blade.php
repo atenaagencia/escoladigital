@@ -29,7 +29,7 @@
 </head>
 <body class="bg-too-dark">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-md navbar-light" style="background: #1C1C1C !important; border-bottom: 5px solid; border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;">
             <div class="container">
                 <a class="navbar-brand main-font font-weight-bold text-light" href="{{ url('/') }}">
                     <h3 class="mt-3">Array <i class="fa fa-code"></i></h3>
@@ -80,6 +80,7 @@
                                 <div class="dropdown-menu rounded-0 dropdown-menu-right bg-too-dark border border-info" aria-labelledby="navbarDropdown">
                                     <a href="#" class="dropdown-item bg-too-dark text-light">Meu Perfil</a>
                                     <a href="/plans" class="dropdown-item bg-too-dark text-light">Meu Plano</a>
+                                    <a href="/certificate" class="dropdown-item bg-too-dark text-light">Meus Certificados</a>
                                     <a href="/conquistas" class="dropdown-item bg-too-dark text-light">Conquistas</a>
                                     <a class="dropdown-item bg-too-dark text-light font-weight-bold" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -98,14 +99,14 @@
             </div>
         </nav>
 
-        <main class="py-4" style="margin-bottom: 70px !important">
+        <main class="" style="margin-bottom: 70px !important">
             @yield('content')
         </main>
     </div>
-    <footer class="footer sticky bg-dark">
+    <!-- <footer class="footer sticky bg-dark">
         <div class="container text-center p-2">
             <p class="lead main-font text-light">Array | 2020.</p>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 <style>
 .container#login{
@@ -6,25 +6,19 @@
     max-width: 900px !important;
     padding-top: 30px;  
 }
-
-.card-content-custom{
-    border-bottom: 20px solid !important; 
-    border: 1px solid;
-    border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;
-}
-
 </style>
 
 @section('content')
 <div class="container main-font" id="login">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <h1 class="text-array text-center main-font display-4 py-5">Acesse sua conta.</h1>
-            <div class="card">
-                <div class="card-body card-content-custom p-4">
+            <h1 class="text-light text-center main-font display-4 py-4">Array</h1>
+            <div  class="text-light text-center">ACESSO ADMINISTRATIVO</div>
+            <div class="card border-0">
+                <div class="card-body bg-too-dark border-0">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-
+                        
                         <div class="form-group row">
                             <div class="col-md-9 mx-auto mt-4">
                                 <input placeholder="Insira seu email" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -48,25 +42,12 @@
                                 @enderror
                             </div>
                         </div>
-                      
 
                         <div class="form-group row py-4">
                             <div class="col-md-9 mx-auto">
                                 <button type="submit" class="btn btn-custom btn-block btn-custom-2" style="max-width: 100%">{{ __('Entrar') }}</button>
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link mt-3" href="{{ route('password.request') }}">
-                                        {{ __('Esqueceu sua senha?') }}
-                                    </a>
-                                 @endif
                             </div>
                         </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-9 mx-auto mt-3">
-                                <p class="lead bg-light p-3 rounded">Ainda não é cadastrado? <a href="{{ route('register') }}" class="font-weight-bold">crie sua conta</a>.</p>
-                            </div>
-                        </div>
-
                     </form>
                 </div>
             </div>
