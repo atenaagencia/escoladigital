@@ -8,9 +8,10 @@
 }
 
 .card-content-custom{
-    border-bottom: 20px solid !important; 
+    /* border-top: 20px solid !important;  */
     border: 1px solid;
     border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;
+    border-radius: 0;
 }
 
 </style>
@@ -18,15 +19,16 @@
 @section('content')
 <div class="container main-font" id="login">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <h1 class="text-array text-center main-font display-4 py-5">Acesse sua conta.</h1>
-            <div class="card">
-                <div class="card-body card-content-custom p-4">
+        <div class="col-md-7">
+            <h1 class="text-light text-center main-font display-4 py-5">Acesse sua conta.</h1>
+            <div class="card rounded-0 shadow">
+                <div class="card-body card-content-custom rounded-0 bg-too-dark shadow p-4">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="form-group row">
-                            <div class="col-md-9 mx-auto mt-4">
+                            <div class="col-md-9 mx-auto py-2 mt-3">
+                                <label for="#" class="text-light">Email:</label>
                                 <input placeholder="Insira seu email" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
@@ -39,6 +41,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-9 mx-auto">
+                                <label for="#" class="text-light">Senha:</label>
                                 <input placeholder="Insira sua senha" id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                 @error('password')
@@ -61,9 +64,10 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <div class="col-md-9 mx-auto mt-3">
-                                <p class="lead bg-light p-3 rounded">Ainda não é cadastrado? <a href="{{ route('register') }}" class="font-weight-bold">crie sua conta</a>.</p>
+                        <div class="col-md-10 mx-auto">
+                            <div class="container mx-auto text-left text-light">
+                                <p class="lead">Ainda não é cadastrado?</p>
+                                <a href="{{ route('register') }}" class="btn btn-lg btn-primary font-weight-bold">crie sua conta.</a>
                             </div>
                         </div>
 
