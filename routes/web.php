@@ -147,6 +147,25 @@ Route::get('/admin/note/show', function () {
     return view('admin.note.show');
 });
 
+// -----------------------------------------------------//
+
+//admin achievements
+
+Route::get('/admin/achievement/', function () {
+    return view('admin.achievement.index');
+});
+
+Route::get('/admin/achievement/new', function () {
+    return view('admin.achievement.create');
+});
+
+Route::get('/admin/achievement/edit', function () {
+    return view('admin.achievement.edit');
+});
+
+Route::get('/admin/achievement/show', function () {
+    return view('admin.achievement.show');
+});
 
 // Student
 

@@ -71,7 +71,7 @@
         <div class="col-xxl-4 col-xl-4 py-3">
             <div class="card card-content shadow bg-gray">
                 <div class="card-body main-font text-light">
-                    <h2 class="h-100 pl-3 font-weight-bold card-title">Conquistas</h2>
+                    <a href="/admin/achievement" class="text-light"><h2 class="h-100 pl-3 font-weight-bold card-title">Conquistas</h2></a>
                 </div>
             </div>
         </div>
