@@ -1,17 +1,17 @@
 @extends('layouts.user')
 
 @section('content')
-<header class="page-header bg-dark text-light pb-5">
+<header class="page-header text-dark pb-5" style="background: linear-gradient(to left, #B06AB3, #4568DC) !important">
     <div class="container">
         <div class="page-header-content">
             <div class="row align-items-center justify-content-between">
                 <div class="col-auto mt-5">
-                    <h1 class="page-header-title main-font">Consultoria</h1>
+                    <h1 class="page-header-title text-light font-weight-bold main-font">Consultoria</h1>
                 </div>
                 <div class="col-auto mt-5">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb bg-transparent main-font">
-                            <li class="breadcrumb-item"><a href="{{asset('home')}}">Início</a></li>
+                            <li class="breadcrumb-item"><a href="/" class="text-dark">Início</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Consultoria</li>
                         </ol>
                     </nav>
@@ -22,7 +22,7 @@
 </header>
 
 <!-- MEUS CURSOS SECTION-->
-<div class="container mt-4">
+<div class="container py-4">
     <h1 class="page-header-title main-font text-light mt-3 font-weight-bold py-2">Horário Atual:</h1>
     <div class="row">
         <div class="col-xxl-12 col-xl-12 mb-2 py-4">
@@ -38,7 +38,7 @@
 </div>
 
 
-<div class="container mt-4">
+<div class="container">
     <h1 class="page-header-title main-font text-light mt-3 font-weight-bold py-2">Horários Disponíveis</h1>
     <div class="row">
         <div class="col-xxl-12 col-xl-12 mb-2 py-4">

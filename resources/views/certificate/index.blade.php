@@ -1,18 +1,18 @@
 @extends('layouts.user')
 
 @section('content')
-<header class="page-header bg-dark text-light pb-5">
+<header class="page-header text-dark pb-5" style="background: linear-gradient(to left, #B06AB3, #4568DC) !important">
     <div class="container">
         <div class="page-header-content">
             <div class="row align-items-center justify-content-between">
                 <div class="col-auto mt-5">
-                    <h1 class="page-header-title main-font">Certificados</h1>
+                    <h1 class="page-header-title text-light font-weight-bold main-font">Certificados</h1>
                 </div>
                 <div class="col-auto mt-5">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb bg-transparent main-font">
-                            <li class="breadcrumb-item"><a href="/home">Array</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Certificados</li>
+                            <li class="breadcrumb-item"><a href="/" class="text-dark">Array</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Inicio</li>
                         </ol>
                     </nav>
                 </div>

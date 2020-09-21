@@ -66,7 +66,6 @@ main.player{
 </header>
 
 <div class="container mt-n10">
-    
     <div class="row">
         <div class="col-xxl-12 col-xl-12 mb-4">
             <div class="card h-100 border-0 rounded-0">
@@ -82,7 +81,9 @@ main.player{
             </div>
         </div>
     </div>
+</div> <!--container-fluid-->
 
+<div class="container">
     <div class="row">
         <div class="h-100 col-12 p-3">
             <h1 class="page-header-title main-font text-light font-weight-bold py-4">Playlist</h1>
@@ -157,7 +158,6 @@ main.player{
             </div>
         </div>
     </div>
-
     <div class="container py-4">
         <div class="float-left">
             <a href="{{asset('home')}}" class="lead text-light">
@@ -165,16 +165,18 @@ main.player{
                 Todos os Cursos
             </a>
         </div>
-        <div class="float-right row">
-            <div class="mr-3">
-                <p class="lead main-font font-weight-bold text-light">Avalie este curso:</p>
-            </div>
-            <div class="rating">
-                <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
-                <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
-                <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
-                <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
-                <i class="far fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+        <div class="float-right">
+            <div class="row">
+                <div class="mr-3">
+                    <p class="lead main-font text-light">Avalie este curso:</p>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="fas fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                    <i class="far fa-2x fa-laugh text-warning float-left m-1 ml-auto"></i>
+                </div>
             </div>
         </div>
     </div>
@@ -187,20 +189,19 @@ main.player{
             <div class="card card-content bg-dark rounded-0">
                 <div class="card-body rounded-0 text-light main-font font-weight-bold pl-xl-4 p-5">
                     <p class="lead p-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et rerum fugit ex quas delectus tenetur alias voluptatem dolorem
-                        exercitationem reprehenderit commodi pariatur distinctio corrupti, ullam ut deleniti cupiditate voluptates!
+                        <i class="fa fa-warning fa-2x pr-3"></i> OPS! Esta aula não possui conteúdo adicional.
                     </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <h1 class="page-header-title main-font text-light font-weight-bold py-2">Está com dificuldade? <span class="text-warning">Podemos te ajudar</span>.</h1>
+        <!-- <h1 class="page-header-title main-font text-light font-weight-bold py-2">Está com dificuldade? <span class="text-warning">Podemos te ajudar</span>.</h1>
 
-    <p class="lead text-light py-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et rerum fugit ex quas delectus tenetur alias voluptatem dolorem!
-    </p>
-    <a href="#" class="btn btn-peaceful main-font font-weight-bold">Solicitar Consultoria</a>
+        <p class="lead text-light py-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et rerum fugit ex quas delectus tenetur alias voluptatem dolorem!
+        </p>
+        <a href="#" class="btn btn-peaceful main-font font-weight-bold">Solicitar Consultoria</a> -->
 
 </div>
 @endsection

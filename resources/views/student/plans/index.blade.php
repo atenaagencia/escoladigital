@@ -1,21 +1,21 @@
 @extends('layouts.user')
 
 @section('content')
-<header class="page-header bg-dark text-light pb-5">
+<header class="page-header text-dark pb-5" style="background: linear-gradient(to left, #B06AB3, #4568DC) !important">
     <div class="container">
         <div class="page-header-content">
             <div class="row align-items-center justify-content-between">
                 <div class="col-auto mt-5">
-                    <h1 class="page-header-title main-font">Meu Plano</h1>
-                    <div class="page-header-subtitle main-font lead py-2">
+                    <h1 class="page-header-title text-light font-weight-bold main-font">Meu Plano</h1>
+                    <div class="page-header-subtitle main-font lead text-light py-2">
                         Plano atual: <span class="text-warning">Aluno Premium</span>
                     </div>
                 </div>
                 <div class="col-auto mt-5">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb bg-transparent main-font">
-                            <li class="breadcrumb-item"><a href="{{asset('home')}}">Início</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Meu Plano</li>
+                            <li class="breadcrumb-item"><a href="/" class="text-dark">Array</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Inicio</li>
                         </ol>
                     </nav>
                 </div>
