@@ -27,63 +27,63 @@
     <h1 class="page-header-title main-font text-light mt-3 font-weight-bold py-3">Geral</h1>
     <div class="row">
         <div class="col-xxl-4 col-xl-4 py-3">
-            <div class="card bg-gray" style="border-top: 5px solid #2EFE9A !important">
+            <div class="card card-content shadow bg-gray">
                 <div class="card-body main-font text-light">
                     <a href="/admin/course" class="text-light"><h2 class="h-100 pl-3 font-weight-bold card-title">Cursos</h2></a>
                 </div>
             </div>
         </div>
         <div class="col-xxl-4 col-xl-4 py-3">
-            <div class="card bg-gray" style="border-top: 5px solid #2EFE9A !important">
+            <div class="card card-content shadow bg-gray">
                 <div class="card-body main-font text-light">
                     <a href="/admin/student" class="text-light"><h2 class="h-100 pl-3 font-weight-bold card-title">Alunos</h2></a>
                 </div>
             </div>
         </div>
         <div class="col-xxl-4 col-xl-4 py-3">
-            <div class="card bg-gray" style="border-top: 5px solid #2EFE9A !important">
+            <div class="card card-content shadow bg-gray">
                 <div class="card-body main-font text-light">
                     <h2 class="h-100 pl-3 font-weight-bold card-title">Instrutores</h2>
                 </div>
             </div>
         </div>
         <div class="col-xxl-4 col-xl-4 py-3">
-            <div class="card bg-gray" style="border-top: 5px solid #2EFE9A !important">
+            <div class="card card-content shadow bg-gray">
                 <div class="card-body main-font text-light">
                     <a href="/admin/assistance" class="text-light"><h2 class="h-100 pl-3 font-weight-bold card-title">Consultoria</h2></a>
                 </div>
             </div>
         </div>
         <div class="col-xxl-4 col-xl-4 py-3">
-            <div class="card bg-gray" style="border-top: 5px solid #2EFE9A !important">
+            <div class="card card-content shadow bg-gray">
                 <div class="card-body main-font text-light">
                     <h2 class="h-100 pl-3 font-weight-bold card-title">Fóruns</h2>
                 </div>
             </div>
         </div>
         <div class="col-xxl-4 col-xl-4 py-3">
-            <div class="card bg-gray" style="border-top: 5px solid #2EFE9A !important">
+            <div class="card card-content shadow bg-gray">
                 <div class="card-body main-font text-light">
                     <a href="/admin/plan" class="text-light"><h2 class="h-100 pl-3 font-weight-bold card-title">Planos</h2></a>
                 </div>
             </div>
         </div>
         <div class="col-xxl-4 col-xl-4 py-3">
-            <div class="card bg-gray" style="border-top: 5px solid #2EFE9A !important">
+            <div class="card card-content shadow bg-gray">
                 <div class="card-body main-font text-light">
                     <h2 class="h-100 pl-3 font-weight-bold card-title">Conquistas</h2>
                 </div>
             </div>
         </div>
         <div class="col-xxl-4 col-xl-4 py-3">
-            <div class="card bg-gray" style="border-top: 5px solid #2EFE9A !important">
+            <div class="card card-content shadow bg-gray">
                 <div class="card-body main-font text-light">
                     <h2 class="h-100 pl-3 font-weight-bold card-title">Avaliações</h2>
                 </div>
             </div>
         </div>
         <div class="col-xxl-4 col-xl-4 py-3">
-            <div class="card bg-gray" style="border-top: 5px solid #2EFE9A !important">
+            <div class="card card-content shadow bg-gray">
                 <div class="card-body main-font text-light">
                     <a href="/admin/note" class="text-light"><h2 class="h-100 pl-3 font-weight-bold card-title">Mural</h2></a>
                 </div>
@@ -91,9 +91,12 @@
         </div>
     </div><!--row-->
 
+    <br>
+    <hr class="border border-dark">
+
     <div class="row py-4 p-3 mt-2">
         <h1 class="page-header-title main-font text-light font-weight-bold">Dados</h1>
-        <a href="#" class="btn btn-warning ml-auto col-md-2 col-sm-12 main-font h1"><i class="fa fa-file-pdf mr-2"></i>Relatório Completo</a>
+        <a href="#" class="btn btn-light ml-auto col-md-2 col-sm-12 main-font h1"><i class="fa fa-file-pdf mr-2"></i>Relatório Completo</a>
     </div>
 
     <div class="row">

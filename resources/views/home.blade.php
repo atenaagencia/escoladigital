@@ -104,7 +104,7 @@ ol.breadcrumb>li.breadcrumb-item, li.breadcrumb-item:active{
         </ul>
     </nav>
 </section>
-<section class="container mt-3">
+<section class="container mt-3 border-top border-secondary">
     <div class="row">
         <div class="col-md-6 mb-4 py-4">
             <h1 class="page-header-title main-font text-light font-weight-bold py-4">Novidades</h1>

@@ -31,7 +31,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light" style="background: #1C1C1C !important; border-bottom: 5px solid; border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;">
             <div class="container">
-                <a class="navbar-brand main-font font-weight-bold text-light" href="{{ url('/') }}">
+                <a class="navbar-brand main-font font-weight-bold text-light" href="{{ asset('home') }}">
                     <h3 class="mt-3">Array <i class="fa fa-code"></i></h3>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
