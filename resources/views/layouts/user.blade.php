@@ -26,6 +26,8 @@
 
     <!-- <script src="https://use.fontawesome.com/cdd53714a0.js"></script> -->
     <script src="https://kit.fontawesome.com/a7e6020e63.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
 </head>
 <body class="bg-too-dark">
     <div id="app">
@@ -103,6 +105,13 @@
             @yield('content')
         </main>
     </div>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
     <!-- <footer class="footer sticky bg-dark">
         <div class="container text-center p-2">
             <p class="lead main-font text-light">Array | 2020.</p>
