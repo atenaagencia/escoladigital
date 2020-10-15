@@ -169,6 +169,10 @@ Route::get('/admin/achievement/show', function () {
 
 // Student
 
+Route::get('/student/perfil', function () {
+    return view('student.perfil.index');
+})->middleware('auth');
+
 Route::get('/student/course', function () {
     return view('student.course.index');
 })->middleware('auth');
