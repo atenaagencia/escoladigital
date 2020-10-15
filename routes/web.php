@@ -9,7 +9,7 @@ Route::get('/pdf', 'HomeController@pdf');
 //general routes
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('site/index-teste');
 });
 
 Auth::routes();

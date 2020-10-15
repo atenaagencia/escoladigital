@@ -138,3 +138,8 @@
     border-right: 0 !important; 
     border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;
 }
+
+
+.array-font{
+    font-family: 'Alata', sans-serif;
+}
