@@ -9,8 +9,9 @@ Route::get('/pdf', 'HomeController@pdf');
 //general routes
 
 Route::get('/', function () {
-    return view('site/index-teste');
+    return view('site/index');
 });
+
 
 Auth::routes();
 
