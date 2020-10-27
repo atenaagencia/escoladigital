@@ -23,12 +23,12 @@
 
     <script src="https://use.fontawesome.com/cdd53714a0.js"></script>
 </head>
-<body class="bg-too-dark">
+<body style="background: url('../img/bg-main.jpg') no-repeat center center; background-size: cover">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light" style="border-bottom: 5px solid; border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;">
             <div class="container">
-                <a class="navbar-brand text-center mx-auto" href="{{ url('/') }}">
-                    <h3 class="main-font text-light font-weight-bold">Array <i class="fa fa-code pl-3"></i></h3>
+                <a class="navbar-brand text-left" href="{{ url('/') }}">
+                    <h2 class="main-font text-light">array</h2>
                 </a>
                 <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

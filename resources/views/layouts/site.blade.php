@@ -31,9 +31,9 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                        <!-- <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li> -->
-                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#services">Categorias</a></li>
+                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#categories">Categorias</a></li>
+                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#assistance">Consultoria</a></li>
+                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#about">Sobre Nós</a></li>
                         <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                         <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="{{route('login')}}">Fazer login</a></li>
                         <li class="nav-item btn btn-light text-dark ml-0 pl-0 p-2 m-1"><a class="nav-link js-scroll-trigger text-dark ml-0 pl-0" href="{{route('register')}}">Inscreva-se</a></li>
