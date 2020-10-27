@@ -32,8 +32,8 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
                         <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                        <!-- <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li> -->
+                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#services">Categorias</a></li>
                         <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                         <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="{{route('login')}}">Fazer login</a></li>
                         <li class="nav-item btn btn-light text-dark ml-0 pl-0 p-2 m-1"><a class="nav-link js-scroll-trigger text-dark ml-0 pl-0" href="{{route('register')}}">Inscreva-se</a></li>
@@ -54,7 +54,11 @@
 
         <!-- Footer-->
         <footer class="bg-light py-5">
-            <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div></div>
+            <div class="container">
+                <div class="small text-center text-muted font-weight-bold">
+                    <img src="{{asset('img/a.png')}}" width="20px" alt="#" class="mr-3">2020, Array.
+                </div>
+            </div>
         </footer>
 
         <!-- Bootstrap core JS-->
