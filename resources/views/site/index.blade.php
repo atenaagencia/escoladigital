@@ -61,7 +61,6 @@
     </div>
 </section>
 
-
 <!-- Consultoria-->
 <section class="p-5 bg-dark text-white" id="assistance" style="background: url('../img/teste.png') no-repeat center center fixed; background-size: cover">
     <div class="container">

@@ -12,6 +12,25 @@ Route::get('/', function () {
     return view('site/index');
 });
 
+//site routes
+
+Route::get('/category/code', function () {
+    return view('site/code/index');
+});
+
+Route::get('/category/design', function () {
+    return view('site/design/index');
+});
+
+Route::get('/category/design/interface', function () {
+    return view('site/design/interface/index');
+});
+
+Route::get('/category/marketing', function () {
+    return view('site/marketing/index');
+});
+
+
 
 Auth::routes();
 
