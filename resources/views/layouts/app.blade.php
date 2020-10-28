@@ -23,7 +23,7 @@
 
     <script src="https://use.fontawesome.com/cdd53714a0.js"></script>
 </head>
-<body style="background: url('../img/bg-main.jpg') no-repeat center center; background-size: cover">
+<body class="bg-dark">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light" style="border-bottom: 5px solid; border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;">
             <div class="container">
