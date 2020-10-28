@@ -30,7 +30,9 @@ main.player{
     border-top: 0 !important;
     border-bottom: 0 !important;
     border-right: 0 !important;
-    border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;
+    border-color: #8904B1;
+    border-radius: 0 !important;
+    /* border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important; */
     background: #1C1C1C !important;
 }
 .card-content{
@@ -49,16 +51,8 @@ main.player{
         <div class="page-header-content pt-4">
             <div class="row align-items-center justify-content-between">
                 <div class="col-auto mt-5">
-                    <h1 class="page-header-title main-font text-light font-weight-bold py-2">Aula 05: Métodos e Requisições</h1>
-                    <div class="page-header-subtitle">Lorem ipsum</div>
-                </div>
-                <div class="col-auto mt-5">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb bg-light main-font">
-                            <li class="breadcrumb-item"><a href="/"><span class="text-dark font-weight-bold">Meus Cursos</span></a></li>
-                            <li class="breadcrumb-item active" aria-current="page"><span class="text-dark">Programador Full Stack</span></li>
-                        </ol>
-                    </nav>
+                    <h1 class="page-header-title main-font text-light font-weight-bold py-2">Métodos e Requisições</h1>
+                    <div class="page-header-subtitle">Aula 05, Módulo 02.</div>
                 </div>
             </div>
         </div>
@@ -83,10 +77,10 @@ main.player{
     </div>
 </div> <!--container-fluid-->
 
-<div class="container">
-    <div class="row">
-        <div class="h-100 col-12 p-3">
-            <h1 class="page-header-title main-font text-light font-weight-bold py-4">Playlist</h1>
+<div class="container p-3 pt-5">
+    <div class="row justify-content-between  card-content-top">
+        <div class="h-100 col-6 p-3">
+            <h1 class="page-header-title main-font text-light py-4">Playlist</h1>
             <div id="accordion">
                 <div class="card bg-gray">
                     <div class="card-header" id="headingOne">
@@ -157,6 +151,14 @@ main.player{
                 </div>
             </div>
         </div>
+        <div class="h-100 col-5 py-4 pt-0">
+            <h1 class="page-header-title main-font text-light py-4">Descrição</h1>
+            <p class="lead text-light">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, corrupti. Dolor magnam libero nam similique mollitia, soluta nobis molestiae numquam, veniam accusantium necessitatibus earum. Hic sed obcaecati neque odio natus.
+            </p>
+            <h1 class="page-header-title main-font text-light py-4">Conteúdo Adicional</h1>
+            <a href="#" class="btn btn-success">Teste.pdf</a>
+        </div>
     </div>
     <div class="container py-4">
         <div class="float-left">
@@ -180,28 +182,5 @@ main.player{
             </div>
         </div>
     </div>
-
-    <!-- MEUS CURSOS SECTION-->
-    <h1 class="page-header-title main-font text-light font-weight-bold mt-5 py-4">Conteúdo Adicional</h1>
-
-    <div class="row">
-        <div class="col-xxl-12 col-xl-12 mb-4 py-4">
-            <div class="card card-content bg-dark rounded-0">
-                <div class="card-body rounded-0 text-light main-font font-weight-bold pl-xl-4 p-5">
-                    <p class="lead p-2">
-                        <i class="fa fa-warning fa-2x pr-3"></i> OPS! Esta aula não possui conteúdo adicional.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        <!-- <h1 class="page-header-title main-font text-light font-weight-bold py-2">Está com dificuldade? <span class="text-warning">Podemos te ajudar</span>.</h1>
-
-        <p class="lead text-light py-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et rerum fugit ex quas delectus tenetur alias voluptatem dolorem!
-        </p>
-        <a href="#" class="btn btn-peaceful main-font font-weight-bold">Solicitar Consultoria</a> -->
-
 </div>
 @endsection

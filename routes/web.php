@@ -197,6 +197,10 @@ Route::get('/student/course', function () {
     return view('student.course.index');
 })->middleware('auth');
 
+Route::get('/student/teste', function () {
+    return view('student.course.teste');
+})->middleware('auth');
+
 Route::get('/assistance', function () {
     return view('student.assistance.index');
 })->middleware('auth');
@@ -224,20 +228,3 @@ Route::get('/plans', function () {
 // Route::resource('course', 'CourseController')->middleware('auth');
 
 
-
-
-
-
-//Courses and Lists
-
-Route::get('/courses', function () {
-    return view('courses.catalogo');
-})->middleware('auth');
-
-Route::get('/courses/design', function () {
-    return view('courses.design.index');
-})->middleware('auth');
-
-Route::get('/courses/design/interface', function () {
-    return view('courses.design.des_interface.index');
-})->middleware('auth');

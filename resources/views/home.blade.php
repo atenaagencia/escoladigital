@@ -20,20 +20,14 @@ ol.breadcrumb>li.breadcrumb-item, li.breadcrumb-item:active{
             <div class="row align-items-center justify-content-between">
                 <div class="col-auto mt-5">
                     <h1 class="page-header-title text-light main-font">{{ $user->name }}</h1>
+                </div>
+                <div class="col-auto mt-5">
                     <div class="page-header-subtitle main-font lead mt-4">
                         <a href="/conquistas" class="text-light bg-dark nav-link rounded">
                             <i class="fa fa-certificate text-warning pr-3"></i>
                             Aluno Premium
                         </a>
                     </div>
-                </div>
-                <div class="col-auto mt-5">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb bg-transparent main-font">
-                            <li class="breadcrumb-item"><a href="/" class="text-dark">Array</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Inicio</li>
-                        </ol>
-                    </nav>
                 </div>
             </div>
         </div>
@@ -108,7 +102,8 @@ ol.breadcrumb>li.breadcrumb-item, li.breadcrumb-item:active{
         </ul>
     </nav> -->
 </section>
-<section class="container mt-5 border-top border-secondary">
+<hr class="border-secondary mt-5">
+<section class="container">
     <div class="row">
         <div class="col-md-6 mb-4 py-4">
             <h1 class="page-header-title main-font text-light py-4">Novidades</h1>

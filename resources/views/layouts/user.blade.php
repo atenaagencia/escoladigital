@@ -32,7 +32,7 @@
 </head>
 <body class="bg-too-dark">
     <div id="app">
-        <nav class="navbar navbar-expand-md p-3 navbar-light" style="background: #1C1C1C !important; border-bottom: 5px solid; border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;">
+        <nav class="navbar navbar-expand-md p-3 navbar-light" style="background: #1C1C1C !important">
             <div class="container">
                 <a class="navbar-brand" href="{{ asset('home') }}">
                     <h2 class="main-font text-light">array</h2>
@@ -80,7 +80,7 @@
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
-                                <div class="dropdown-menu rounded-0 dropdown-menu-right bg-too-dark border border-info" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu dropdown-menu-right bg-too-dark" aria-labelledby="navbarDropdown">
                                     <a href="/student/perfil" class="dropdown-item bg-too-dark text-light">Meu Perfil</a>
                                     <a href="/plans" class="dropdown-item bg-too-dark text-light">Meu Plano</a>
                                     <a href="/certificate" class="dropdown-item bg-too-dark text-light">Meus Certificados</a>
