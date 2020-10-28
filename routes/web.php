@@ -18,10 +18,14 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 // Admin
+Route::prefix('admin')->group(function () {
 
-Route::get('/admin', function () {
-    return view('admin.index');
+    Route::get('/', 'AdminController@index');
+    Route::resource('course', 'CourseController')->middleware('auth');
+
+
 });
+
 
 Route::get('/admin/login', function () {
     return view('admin.login');
@@ -29,21 +33,21 @@ Route::get('/admin/login', function () {
 
 // Admin course
 
-Route::get('/admin/course', function () {
-    return view('admin.course.index');
-});
+// Route::get('/admin/course', function () {
+//     return view('admin.course.index');
+// });
 
-Route::get('/admin/course/new', function () {
-    return view('admin.course.create');
-});
+// Route::get('/admin/course/new', function () {
+//     return view('admin.course.create');
+// });
 
-Route::get('/admin/course/show', function () {
-    return view('admin.course.show');
-});
+// Route::get('/admin/course/show', function () {
+//     return view('admin.course.show');
+// });
 
-Route::get('/admin/course/edit', function () {
-    return view('admin.course.edit');
-});
+// Route::get('/admin/course/edit', function () {
+//     return view('admin.course.edit');
+// });
 
 //Admin content course (adiciona conteúdo a um curso)
 

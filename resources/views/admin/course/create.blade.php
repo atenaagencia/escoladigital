@@ -34,37 +34,7 @@
         <div class="col-xxl-12 col-xl-12 mb-2 py-4">
             <div class="card bg-light">
                 <div class="card-body main-font py-4 bg-light">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleFormControlSelect1">Categoria</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Titulo</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Lorem Ipsum">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Descrição 1 (O que vou aprender neste curso?)</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Lorem Ipsum"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Descrição 2 (Conteúdo do curso)</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Lorem Ipsum"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Descrição 3 (O que preciso saber antes de começar)</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Lorem Ipsum"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <div class="btn btn-success main-font col-lg-3 float-right py-2">Cadastrar</div>
-                        </div>
-                    </form>
+                    @include('admin.course.forms.form_course')
                 </div>
             </div>
         </div>

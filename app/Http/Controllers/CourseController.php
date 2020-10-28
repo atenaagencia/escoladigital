@@ -13,7 +13,8 @@ class CourseController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {   $courses = Course::all();
+    {   
+        $courses = Course::all();
         return view('admin.course.index')->with(compact('courses'));
     }
 
@@ -24,7 +25,7 @@ class CourseController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.course.create');
     }
 
     /**
@@ -35,7 +36,9 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $query = Course::create($request->all());
+
+        return redirect(route('course.index'));
     }
 
     /**

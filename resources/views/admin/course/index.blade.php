@@ -27,7 +27,7 @@
     
     <div class="row py-4 p-3">
         <h1 class="page-header-title main-font text-light font-weight-bold">Cursos</h1>
-        <a href="/admin/course/new" class="btn btn-success ml-auto col-lg-2 main-font h1">Novo Curso</a>
+        <a href="/admin/course/create" class="btn btn-success ml-auto col-lg-2 main-font h1">Novo Curso</a>
     </div>
 
     <div class="row">
@@ -46,10 +46,11 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach ($courses as $course)                                  
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>Design</td>
-                                    <td>Photoshop CS6</td>
+                                <th scope="row">--</th>
+                                <td>{{$course->category->title}}</td>
+                                    <td>{{$course->title}}</td>
                                     <td><a href="/admin/course/content" class="btn btn-primary">Editar<i class="ml-3 fa fa-edit"></i></a></td>
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -59,32 +60,9 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Design</td>
-                                    <td>Photoshop CC</td>
-                                    <td><a href="#" class="btn btn-primary">Editar<i class="ml-3 fa fa-edit"></i></a></td>
-                                    <td>
-                                        <div class="btn-group" role="group" aria-label="Basic example">
-                                            <a href="/admin/course/show" class="btn btn-dark"><i class="fa fa-eye"></i></a>
-                                            <a href="/admin/course/edit" class="btn btn-dark"><i class="fa fa-edit"></i></a>
-                                            <a href="#" class="btn btn-dark"><i class="fa fa-trash"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Design</td>
-                                    <td>InDesign CS6</td>
-                                    <td><a href="#" class="btn btn-primary">Editar<i class="ml-3 fa fa-edit"></i></a></td>
-                                    <td>
-                                        <div class="btn-group" role="group" aria-label="Basic example">
-                                            <a href="/admin/course/show" class="btn btn-dark"><i class="fa fa-eye"></i></a>
-                                            <a href="/admin/course/edit" class="btn btn-dark"><i class="fa fa-edit"></i></a>
-                                            <a href="#" class="btn btn-dark"><i class="fa fa-trash"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
+                                @endforeach
+                              
+                               
                             </tbody>
                         </table>
                     </div>
