@@ -27,7 +27,7 @@
                 <div class="card border-0 py-3 bg-transparent">
                     <div class="row">
                         <div class="col-xxl-4 col-xl-4 mb-2 py-4">
-                            <a href="/category/design/interface" class="nav-link p-0">
+                            <a href="/category/design" class="nav-link p-0">
                                 <div class="card card-content-bottom h-100 bg-white">
                                     <div class="card-header card-header-padding" style="background: url('https://s.udemycdn.com/home/top-categories/lohp-category-photography.jpg') center center; background-size: cover;"></div>
                                     <div class="card-body main-font text-dark pl-xl-4 pt-xl-0 p-5">
