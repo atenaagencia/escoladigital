@@ -132,6 +132,12 @@
     border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important
 }
 
+.card-content-full{
+    border: 1px solid;
+    border-top: 5px solid !important; 
+    border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important
+}
+
 .card-content-top{
     border-top: 5px solid !important; 
     border-bottom:0 !important; 

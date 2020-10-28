@@ -1,5 +1,9 @@
 @extends('layouts.site')
-
+<style>
+a.nav-link#link-hover:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+</style>
 @section('content')
 <header class="page-header bg-dark p-5" style=" padding-top: 100px !important">
     <div class="container">
@@ -59,7 +63,7 @@
 </section>
 
 <section class="bg-light p-5">
-    <div class="container py-4">
+    <div class="container py-4 mb-2">
         <div class="row">
             <div class="col-xxl-6 col-xl-6 py-4">
                 <div class="card card-content-top h-100 bg-transparent">
@@ -87,10 +91,20 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
+    <div class="container card-content-bottom bg-white shadow p-4">
+        <div class="row justify-content-between">
+            <div class="col-md-7">
+                <ul class="list-group list-group-flush bg-transparent main-font text-dark p-3">
+                    <li class="lead mb-1 ml-3">Início imediato</li>
+                    <li class="lead mb-1 ml-3">Acesso vitalício</li>
+                    <li class="lead mb-1 ml-3">20 Horas de Vídeo + conteúdo adicional</li>
+                </ul>
+            </div>
             <div class="col-lg-3 col-sm-6 col-auto ml-auto">
-                <button id="25" class="btn btn-block btn-too-success main-font py-3 mt-3">
+                <a class="py-3 mt-3">
+                    <h2 class="font-weight-bold main-font text-right mb-1">R$ 39,90</h2>
+                </a>
+                <button id="25" class="btn btn-lg btn-too-success main-font mt-3 float-right">
                     <h3>Adquirir agora</h3>
                 </button>
             </div>
@@ -110,31 +124,37 @@
                 <div class="card border-0 py-3 bg-transparent">
                     <div class="row">
                         <div class="col-xxl-4 col-xl-4 mb-2 py-4">
-                            <div class="card card-content-bottom h-100 bg-white">
-                                <div class="card-header card-header-padding" style="background: url('https://s.udemycdn.com/home/top-categories/lohp-category-photography.jpg') center center; background-size: cover;"></div>
-                                <div class="card-body main-font text-dark pl-xl-4 pt-xl-0 p-5">
-                                    <h1 class="font-weight-bold text-left main-font mb-2 py-4">Design</h1>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="/category/design/interface" class="nav-link p-0" id="link-hover">
+                                <div class="card card-content-bottom h-100 bg-white">
+                                    <div class="card-header card-header-padding" style="background: url('https://s.udemycdn.com/home/top-categories/lohp-category-photography.jpg') center center; background-size: cover;"></div>
+                                    <div class="card-body main-font text-dark pl-xl-4 pt-xl-0 p-5">
+                                        <h1 class="font-weight-bold text-left main-font mb-2 py-4">Design</h1>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-xxl-4 col-xl-4 mb-2 py-4">
-                            <div class="card card-content-bottom h-100 bg-white">
-                                <div class="card-header card-header-padding" style="background: url('https://s.udemycdn.com/home/top-categories/lohp-category-photography.jpg') center center; background-size: cover;"></div>
-                                <div class="card-body main-font text-dark pl-xl-4 pt-xl-0 p-5">
-                                    <h1 class="font-weight-bold text-left main-font mb-2 py-4">Design</h1>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="/category/design/interface" class="nav-link p-0" id="link-hover">
+                                <div class="card card-content-bottom h-100 bg-white">
+                                    <div class="card-header card-header-padding" style="background: url('https://s.udemycdn.com/home/top-categories/lohp-category-photography.jpg') center center; background-size: cover;"></div>
+                                    <div class="card-body main-font text-dark pl-xl-4 pt-xl-0 p-5">
+                                        <h1 class="font-weight-bold text-left main-font mb-2 py-4">Design</h1>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-xxl-4 col-xl-4 mb-2 py-4">
-                            <div class="card card-content-bottom h-100 bg-white">
-                                <div class="card-header card-header-padding" style="background: url('https://s.udemycdn.com/home/top-categories/lohp-category-photography.jpg') center center; background-size: cover;"></div>
-                                <div class="card-body main-font text-dark pl-xl-4 pt-xl-0 p-5">
-                                    <h1 class="font-weight-bold text-left main-font mb-2 py-4">Design</h1>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="/category/design/interface" class="nav-link p-0" id="link-hover">
+                                <div class="card card-content-bottom h-100 bg-white">
+                                    <div class="card-header card-header-padding" style="background: url('https://s.udemycdn.com/home/top-categories/lohp-category-photography.jpg') center center; background-size: cover;"></div>
+                                    <div class="card-body main-font text-dark pl-xl-4 pt-xl-0 p-5">
+                                        <h1 class="font-weight-bold text-left main-font mb-2 py-4">Design</h1>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div> 
                 </div>

@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Array - Escola Digital</title>
+    <title>Array</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -23,6 +23,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link href="{{asset('css/site.css')}}" rel="stylesheet" />
 
     <!-- <script src="https://use.fontawesome.com/cdd53714a0.js"></script> -->
     <script src="https://kit.fontawesome.com/a7e6020e63.js" crossorigin="anonymous"></script>
@@ -31,10 +32,10 @@
 </head>
 <body class="bg-too-dark">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light" style="background: #1C1C1C !important; border-bottom: 5px solid; border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;">
+        <nav class="navbar navbar-expand-md p-3 navbar-light" style="background: #1C1C1C !important; border-bottom: 5px solid; border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;">
             <div class="container">
-                <a class="navbar-brand main-font font-weight-bold text-light" href="{{ asset('home') }}">
-                    <h3 class="mt-3">Array <i class="fa fa-code"></i></h3>
+                <a class="navbar-brand" href="{{ asset('home') }}">
+                    <h2 class="main-font text-light">array</h2>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -60,7 +61,7 @@
                             @endif
                         @else
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="/courses" role="button">
+                                <a class="nav-link text-info" href="/" role="button">
                                     Catálogo
                                 </a>
                             </li>
@@ -105,6 +106,7 @@
             @yield('content')
         </main>
     </div>
+
     <script>
         ClassicEditor
             .create( document.querySelector( '#editor' ) )
@@ -112,10 +114,62 @@
                 console.error( error );
             } );
     </script>
-    <!-- <footer class="footer sticky bg-dark">
-        <div class="container text-center p-2">
-            <p class="lead main-font text-light">Array | 2020.</p>
+    
+    <!-- Footer -->
+    <section id="footer" class="bg-dark">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="https://www.fiverr.com/share/qb8D02">Home</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02">About</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02">FAQ</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02">Get Started</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="https://www.fiverr.com/share/qb8D02">Home</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02">About</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02">FAQ</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02">Get Started</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="https://www.fiverr.com/share/qb8D02">Home</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02">About</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02">FAQ</a></li>
+                        <li><a href="https://www.fiverr.com/share/qb8D02">Get Started</a></li>
+                        <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by">Imprint</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                    <ul class="list-unstyled list-inline social text-left">
+                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fab fa-2x mr-2 fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fab fa-2x mr-2 fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fab fa-2x mr-2 fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fab fa-2x mr-2 fa-google-plus"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-2x mr-2 fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </footer> -->
+    </section>
+
+    <footer class="bg-dark card-content-top py-4">
+        <div class="container">
+            <div class="small text-right text-light font-weight-bold">
+                <img src="{{asset('img/a.png')}}" width="20px" alt="#" class="mr-3">2020, Array.
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

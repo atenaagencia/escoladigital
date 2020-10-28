@@ -8,14 +8,18 @@ ol.breadcrumb>li.breadcrumb-item, li.breadcrumb-item:active{
 .breadcrumb-item.active{
     font-weight: bold !important;
 }
+
+.card-header-user-padding {
+    padding: 3rem !important;
+}
 </style>
 @section('content')
-<header class="page-header text-dark pb-5" style="background: linear-gradient(to left, #B06AB3, #4568DC) !important">
+<header class="page-header bg-array text-dark pb-5">
     <div class="container">
         <div class="page-header-content">
             <div class="row align-items-center justify-content-between">
                 <div class="col-auto mt-5">
-                    <h1 class="page-header-title text-light font-weight-bold main-font">{{ $user->name }}</h1>
+                    <h1 class="page-header-title text-light main-font">{{ $user->name }}</h1>
                     <div class="page-header-subtitle main-font lead mt-4">
                         <a href="/conquistas" class="text-light bg-dark nav-link rounded">
                             <i class="fa fa-certificate text-warning pr-3"></i>
@@ -39,58 +43,58 @@ ol.breadcrumb>li.breadcrumb-item, li.breadcrumb-item:active{
 <!-- MEUS CURSOS SECTION-->
 
 <section class="container mt-4">
-    <h1 class="page-header-title main-font text-light mt-3 font-weight-bold py-4">Meus Cursos</h1>
+    <h1 class="page-header-title main-font text-light mt-3 py-4">Meus Cursos</h1>
     <div class="row">
         <div class="col-xxl-4 col-xl-4 mb-2 py-4">
-            <div class="card card-content shadow bg-gray">
-                <div class="card-body main-font text-light pl-xl-4 pt-xl-0 p-5">
-                    <h1 class="h-100 font-weight-bold py-4 card-title">Programador Web</h1>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-                <div class="card-footer border-0">
-                    <a href="#" class="btn btn-too-dark nav-link main-font font-weight-bold float-left">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="p-2 text-dark">75%</span></div>
-                        </div>
+            <div class="card h-100 bg-gray shadow-sm">
+                <a href="/student/course" class="nav-link p-0" id="link-hover">
+                    <div class="card-header card-header-user-padding" style="background: url('https://s.udemycdn.com/home/top-categories/lohp-category-photography.jpg') center center; background-size: cover;"></div>
+                    <div class="card-body main-font text-light text-left">
+                        <h1 class="pt-3">Interface UI/UX</h1>
+                    </div>
+                </a>
+                <div class="card-footer pb-0 border-0">
+                    <p class="lead text-light float-left">Estatísticas</p>
+                    <a href="#" data-toggle="modal" data-target="#analytic-modal" class="float-right main-font font-weight-bold">
+                        <i class="fa fa-2x fa-exclamation-circle"></i>
                     </a>
-                    <a href="/student/course" class="btn btn-success float-right main-font font-weight-bold">Continuar <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
         <div class="col-xxl-4 col-xl-4 mb-2 py-4">
-            <div class="card card-content shadow bg-gray">
-                <div class="card-body main-font text-light pl-xl-4 pt-xl-0 p-5">
-                    <h1 class="h-100 font-weight-bold py-4 card-title">Programador Full Stack</h1>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-                <div class="card-footer border-0">
-                    <a href="#" class="btn btn-too-dark nav-link main-font font-weight-bold float-left">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="p-2 text-dark">75%</span></div>
-                        </div>
+            <div class="card h-100 bg-gray shadow-sm">
+                <a href="/student/course" class="nav-link p-0" id="link-hover">
+                    <div class="card-header card-header-user-padding" style="background: url('https://s.udemycdn.com/home/top-categories/lohp-category-photography.jpg') center center; background-size: cover;"></div>
+                    <div class="card-body main-font text-light text-left">
+                        <h1 class="pt-3">Interface UI/UX</h1>
+                    </div>
+                </a>
+                <div class="card-footer pb-0 border-0">
+                    <p class="lead text-light float-left">Estatísticas</p>
+                    <a href="#" data-toggle="modal" data-target="#analytic-modal" class="float-right main-font font-weight-bold">
+                        <i class="fa fa-2x fa-exclamation-circle"></i>
                     </a>
-                    <a href="/student/course" class="btn btn-success float-right main-font font-weight-bold">Continuar <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
         <div class="col-xxl-4 col-xl-4 mb-2 py-4">
-            <div class="card card-content shadow h-100 bg-gray">
-                <div class="card-body main-font text-light pl-xl-4 pt-xl-0 p-5">
-                    <h1 class="font-weight-bold py-4 card-title">Lorem Ipsum</h1>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-                <div class="card-footer border-0">
-                    <a href="#" class="btn btn-too-dark nav-link main-font font-weight-bold float-left">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="p-2 text-dark">75%</span></div>
-                        </div>
+            <div class="card h-100 bg-gray shadow-sm">
+                <a href="/student/course" class="nav-link p-0" id="link-hover">
+                    <div class="card-header card-header-user-padding" style="background: url('https://s.udemycdn.com/home/top-categories/lohp-category-photography.jpg') center center; background-size: cover;"></div>
+                    <div class="card-body main-font text-light text-left">
+                        <h1 class="pt-3">Interface UI/UX</h1>
+                    </div>
+                </a>
+                <div class="card-footer pb-0 border-0">
+                    <p class="lead text-light float-left">Estatísticas</p>
+                    <a href="#" data-toggle="modal" data-target="#analytic-modal" class="float-right main-font font-weight-bold">
+                        <i class="fa fa-2x fa-exclamation-circle"></i>
                     </a>
-                    <a href="/student/course" class="btn btn-success float-right main-font font-weight-bold">Continuar <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
     </div><!--row-->
-    <nav aria-label="Page navigation example" class="py-4">
+    <!-- <nav aria-label="Page navigation example" class="py-4">
         <ul class="pagination justify-content-end main-font">
             <li class="page-item disabled">
                 <a class="page-link bg-too-dark text-light" href="#" tabindex="-1">Anterior</a>
@@ -102,32 +106,52 @@ ol.breadcrumb>li.breadcrumb-item, li.breadcrumb-item:active{
                 <a class="page-link bg-array text-light" href="#">Próximo</a>
             </li>
         </ul>
-    </nav>
+    </nav> -->
 </section>
-<section class="container mt-3 border-top border-secondary">
+<section class="container mt-5 border-top border-secondary">
     <div class="row">
         <div class="col-md-6 mb-4 py-4">
-            <h1 class="page-header-title main-font text-light font-weight-bold py-4">Novidades</h1>
-            <div class="card bg-gray shadow">
+            <h1 class="page-header-title main-font text-light py-4">Novidades</h1>
+            <div class="card card-content-top bg-gray">
                 <div class="card-body main-font font-weight-bold pl-xl-4">
                     <p class="lead text-light">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. porro repellendus maxime eius.
                     </p>
-                    <a href="/student/course" class="btn btn-primary float-right main-font font-weight-bold">Ver Mais <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
         <div class="col-md-6 mb-4 py-4">
-            <h1 class="page-header-title main-font text-light font-weight-bold py-4">Blog</h1>
-            <div class="card bg-gray shadow">
+            <h1 class="page-header-title main-font text-light py-4">Blog</h1>
+            <div class="card card-content-top bg-gray">
                 <div class="card-body main-font font-weight-bold pl-xl-4">
                     <p class="lead text-light">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. porro repellendus maxime eius.
                     </p>
-                    <a href="/student/course" class="btn btn-primary float-right main-font font-weight-bold">Ver Mais <i class="ml-3 fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="analytic-modal" tabindex="-1" role="dialog" aria-labelledby="analytic-modalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="analytic-modalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 @endsection
