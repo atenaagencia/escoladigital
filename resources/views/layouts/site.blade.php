@@ -28,16 +28,25 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger array-font font-weight-bold" href="#page-top"><h2>array</h2></a>
+                <a class="navbar-brand array-font font-weight-bold" href="/"><h2>array</h2></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#categories">Categorias</a></li>
-                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#assistance">Consultoria</a></li>
-                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#about">Sobre Nós</a></li>
-                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="#footer">Contact</a></li>
-                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link js-scroll-trigger" href="{{route('login')}}">Fazer login</a></li>
-                        <li class="nav-item btn btn-light text-dark ml-0 pl-0 p-2 m-1"><a class="nav-link js-scroll-trigger text-dark ml-0 pl-0" href="{{route('register')}}">Inscreva-se</a></li>
+                        <li class="nav-item p-2 mt-1 mb-1 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categorias
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/category/design">Design</a>
+                            <a class="dropdown-item" href="/category/marketing">Marketing</a>
+                            <a class="dropdown-item" href="/category/code">Programação</a>
+                            </div>
+                        </li>
+                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="#">Consultoria</a></li>
+                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="#">Sobre Nós</a></li>
+                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="{{route('login')}}">Fazer login</a></li>
+                        <li class="nav-item btn btn-light text-dark ml-0 pl-0 p-2 m-1"><a class="nav-link text-dark ml-0 pl-0" href="{{route('register')}}">Inscreva-se</a></li>
                     </ul>
                 </div>
             </div>

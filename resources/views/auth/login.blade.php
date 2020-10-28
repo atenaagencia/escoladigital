@@ -1,84 +1,84 @@
-@extends('layouts.app')
+@extends('layouts.site')
 
 <style>
-.container#login{
-    width: 100%;
-    max-width: 900px !important;
-    padding-top: 30px;  
-}
 
-.card-content-custom{
-    /* border-top: 20px solid !important;  */
-    border: 1px solid;
-    /* border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important; */
-    border-radius: 3px;
-}
-
-::placeholder{
+/* ::placeholder{
     color: white !important;
+} */
+
+.colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
 }
 
+.full-height {
+    height: 100vh;
+}
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.position-ref {
+    position: relative;
+}
+.content {
+    text-align: center;
+    min-width: 400px;
+    max-width: 900px;
+    /* margin-top: 75px !important; */
+}
 </style>
 
 @section('content')
-<div class="container main-font" id="login">
-    <div class="row justify-content-center">
-        <div class="col-md-7">
+
+<div class="bg-too-dark flex-center position-ref full-height">
+    <div class="content">
+        <form method="POST" action="{{ route('login') }}">
+            @csrf
             <h1 class="text-light text-left main-font display-4 py-5">Acesse sua conta.</h1>
-            <div class="card shadow">
-                <div class="card-body card-content-custom bg-too-dark p-1">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
+            <div class="form-group mb-3">
+                <input placeholder="Insira seu email" id="email" type="email" class="form-control @error('email') is-invalid @enderror input-lg" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
-                        <div class="form-group row">
-                            <div class="col-md-9 mx-auto py-2 mt-3">
-                                <label for="#" class="text-light">Email:</label>
-                                <input placeholder="Insira seu email" id="email" type="email" class="form-control @error('email') is-invalid @enderror bg-transparent text-light" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus style="border-radius: 5px">
+                @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
+            <div class="form-group">
+                <input placeholder="Insira sua senha" id="password" type="password" class="form-control @error('password') is-invalid @enderror input-lg" name="password" required autocomplete="current-password">
 
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-9 mx-auto">
-                                <label for="#" class="text-light">Senha:</label>
-                                <input placeholder="Insira sua senha" id="password" type="password" class="form-control @error('password') is-invalid @enderror bg-transparent text-light" name="password" required autocomplete="current-password" style="border-radius: 5px">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-                      
-
-                        <div class="form-group row py-4">
-                            <div class="col-md-9 mx-auto">
-                                <button type="submit" class="btn btn-custom btn-block btn-custom-2" style="max-width: 100%">{{ __('Entrar') }}</button>
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link text-light mt-3" href="{{ route('password.request') }}">
-                                        {{ __('Esqueceu sua senha?') }}
-                                    </a>
-                                 @endif
-                            </div>
-                        </div>
-
-                        <div class="col-md-10 mx-auto py-4">
-                            <div class="container mx-auto text-center text-light">
-                                <p class="lead">Ainda não é cadastrado?</p>
-                                <a href="{{ route('register') }}" class="btn btn-lg btn-block btn-primary font-weight-bold">crie sua conta.</a>
-                            </div>
-                        </div>
-
-                    </form>
+                @error('password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
+            <span class="button-checkbox">
+                @if (Route::has('password.request'))
+                <a class="btn btn-link text-light mt-3" href="{{ route('password.request') }}">
+                    {{ __('Esqueceu sua senha?') }}
+                </a>
+                @endif
+            </span>
+            <hr class="colorgraph">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <button type="submit" class="btn btn-block btn-success main-font py-3 mt-3" style="max-width: 100%">{{ __('Entrar') }}</button>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <a href="{{ route('register') }}" class="btn btn-block btn-info main-font py-3 mt-3" style="max-width: 100%">{{ __('Registrar') }}</a>
                 </div>
             </div>
-        </div>
+        </form>
+        
     </div>
 </div>
 @endsection
