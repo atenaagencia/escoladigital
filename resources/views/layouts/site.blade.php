@@ -32,6 +32,7 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        @guest
                         <li class="nav-item p-2 mt-1 mb-1 dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Categorias
@@ -47,6 +48,39 @@
                         <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="#">Contact</a></li>
                         <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="{{route('login')}}">Fazer login</a></li>
                         <li class="nav-item btn btn-light text-dark ml-0 pl-0 p-2 m-1"><a class="nav-link text-dark ml-0 pl-0" href="{{route('register')}}">Inscreva-se</a></li>
+                        @else
+                        <li class="nav-item p-2 mt-1 mb-1 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categorias
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/category/design">Design</a>
+                            <a class="dropdown-item" href="/category/marketing">Marketing</a>
+                            <a class="dropdown-item" href="/category/code">Programação</a>
+                            </div>
+                        </li>
+                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="#">Consultoria</a></li>
+                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="#">Sobre Nós</a></li>
+                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item p-2 mt-1 mb-1 dropdown">
+                            <a id="navbarDropdown" class="nav-link font-weight-bold text-uppercase main-font dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right bg-too-dark" aria-labelledby="navbarDropdown">
+                                <a href="/home" class="dropdown-item bg-too-dark text-light">Área do Aluno</a>
+                                <a class="dropdown-item bg-too-dark text-light font-weight-bold" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();">
+                                    {{ __('Sair') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                        @endguest
                     </ul>
                 </div>
             </div>
