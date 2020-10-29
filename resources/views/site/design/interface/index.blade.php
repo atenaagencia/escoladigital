@@ -27,7 +27,7 @@ a.nav-link#link-hover:hover{
     </div>
 </header>
 
-<section class="bg-white p-5">
+<section class="p-5" style="background: url('https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center fixed; background-size: cover;">
     <div class="container py-4">
         <div class="row">
             <div class="col py-4">

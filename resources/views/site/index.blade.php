@@ -34,7 +34,7 @@ a.nav-link#link-hover:hover{
                         <div class="col-xxl-4 col-xl-4 mb-2 py-4">
                             <a href="/category/design" class="nav-link p-0" id="link-hover">
                                 <div class="card card-content-bottom h-100 bg-white">
-                                    <div class="card-header card-header-padding" style="background: url('https://s.udemycdn.com/home/top-categories/lohp-category-photography.jpg') center center; background-size: cover;"></div>
+                                    <div class="card-header card-header-padding" style="background: url('https://images.pexels.com/photos/3471423/pexels-photo-3471423.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center center; background-size: cover;"></div>
                                     <div class="card-body main-font text-dark pl-xl-4 pt-xl-0 p-5">
                                         <h1 class="font-weight-bold text-left main-font mb-2 py-4">Design</h1>
                                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -45,7 +45,7 @@ a.nav-link#link-hover:hover{
                         <div class="col-xxl-4 col-xl-4 mb-2 py-4">
                             <a href="/category/design" class="nav-link p-0" id="link-hover">
                                 <div class="card card-content-bottom h-100 bg-white">
-                                <div class="card-header card-header-padding" style="background: url('https://s.udemycdn.com/home/top-categories/lohp-category-marketing.jpg') center center; background-size: cover;"></div>
+                                <div class="card-header card-header-padding" style="background: url('https://images.pexels.com/photos/4050717/pexels-photo-4050717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center center; background-size: cover;"></div>
                                     <div class="card-body main-font text-dark pl-xl-4 pt-xl-0 p-5">
                                         <h1 class="font-weight-bold text-left main-font mb-2 py-4">Marketing</h1>
                                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -56,7 +56,7 @@ a.nav-link#link-hover:hover{
                         <div class="col-xxl-4 col-xl-4 mb-2 py-4">
                             <a href="/category/design" class="nav-link p-0" id="link-hover">
                                 <div class="card card-content-bottom h-100 bg-white">
-                                <div class="card-header card-header-padding" style="background: url('https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg') center center; background-size: cover;"></div>
+                                <div class="card-header card-header-padding" style="background: url('https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center center; background-size: cover;"></div>
                                     <div class="card-body main-font text-dark pl-xl-4 pt-xl-0 p-5">
                                         <h1 class="font-weight-bold text-left main-font mb-2 py-4">Programação</h1>
                                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
