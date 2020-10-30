@@ -39,7 +39,7 @@ a.nav-link#link-hover:hover{
                     </div>
                 </div>
             </div>
-            <div class="col-3 py-4">
+            <div class="col-lg-3 col-md-3 col-sm-12 py-4">
                 <div class="card bg-array text-light h-100 border-0 shadow-sm">
                     <div class="card-body main-font pl-xl-4 pt-xl-0">
                         <div class="row justify-content-center mx-auto">

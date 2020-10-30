@@ -80,7 +80,7 @@ a.nav-link#link-hover:hover{
                 <h1 class="mt-0 py-2">Dúvidas no curso? <br><b>nós podemos te ajudar</b>.</h1>
                 <!-- <hr class="divider my-4"> -->
                 <p class="py-4 main-font lead">Lorem ipsum dolor sit amet consectetur adipisicing elit <span class="font-weight-bold text-primary">consultoria</span>.</p>
-                <a class="btn btn-primary btn-xl mt-2" href="#">Saiba como</a>
+                <a class="btn btn-primary btn-xl mt-2" href="/site/assistance">Saiba como</a>
             </div>
         </div>
     </div>

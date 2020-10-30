@@ -43,9 +43,8 @@
                             <a class="dropdown-item" href="/category/code">Programação</a>
                             </div>
                         </li>
-                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="#">Consultoria</a></li>
-                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="#">Sobre Nós</a></li>
-                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="/site/assistance">Consultoria</a></li>
+                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="/site/about">Sobre Nós</a></li>
                         <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="{{route('login')}}">Fazer login</a></li>
                         <li class="nav-item btn btn-light text-dark ml-0 pl-0 p-2 m-1"><a class="nav-link text-dark ml-0 pl-0" href="{{route('register')}}">Inscreva-se</a></li>
                         @else
@@ -59,9 +58,8 @@
                             <a class="dropdown-item" href="/category/code">Programação</a>
                             </div>
                         </li>
-                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="#">Consultoria</a></li>
+                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="/site/assistance">Consultoria</a></li>
                         <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="#">Sobre Nós</a></li>
-                        <li class="nav-item p-2 mt-1 mb-1"><a class="nav-link" href="#">Contact</a></li>
                         <li class="nav-item p-2 mt-1 mb-1 dropdown">
                             <a id="navbarDropdown" class="nav-link font-weight-bold text-uppercase main-font dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }} <span class="caret"></span>

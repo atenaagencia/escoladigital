@@ -30,6 +30,9 @@ Route::get('/category/marketing', function () {
     return view('site/marketing/index');
 });
 
+Route::get('/site/assistance', function () {
+    return view('site/assistance/index');
+});
 
 
 Auth::routes();
