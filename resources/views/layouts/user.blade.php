@@ -25,7 +25,10 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <link href="{{asset('css/site.css')}}" rel="stylesheet" />
 
-    <!-- <script src="https://use.fontawesome.com/cdd53714a0.js"></script> -->
+    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
     <script src="https://kit.fontawesome.com/a7e6020e63.js" crossorigin="anonymous"></script>
 
     <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
@@ -107,14 +110,6 @@
         </main>
     </div>
 
-    <script>
-        ClassicEditor
-            .create( document.querySelector( '#editor' ) )
-            .catch( error => {
-                console.error( error );
-            } );
-    </script>
-    
     <!-- Footer -->
     <section id="footer" class="bg-dark">
         <div class="container">
@@ -171,5 +166,16 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+
+    <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+     
 </body>
 </html>

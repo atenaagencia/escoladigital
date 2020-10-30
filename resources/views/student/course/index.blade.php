@@ -2,8 +2,15 @@
 <style>
 video {
   width: 100% !important;
-  height: auto;
-  max-height: 500px !important;
+  /* height: auto; */
+  max-height: 100% !important;
+}
+
+.video-js .vjs-big-play-button {
+    top: 50% !important;
+    left: 50% !important;
+    margin-top: -.81666em !important;;
+    margin-left: -1.5em !important;;
 }
 
 main.player{
@@ -43,39 +50,34 @@ main.player{
     border-image: linear-gradient(to left, #B06AB3, #4568DC) 1 !important;
     background: #1C1C1C !important;
 }
+
+.my_video_1-dimensions {
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+}
 </style>
 
 @section('content')
-<header class="page-header text-light pb-10 bg-dev-course">
+<header class="page-header text-light pb-5 bg-dev-course">
     <div class="container">
-        <div class="page-header-content pt-4">
+        <div class="page-header-content">
             <div class="row align-items-center justify-content-between">
                 <div class="col-auto mt-5">
-                    <h1 class="page-header-title main-font text-light font-weight-bold py-2">Métodos e Requisições</h1>
-                    <div class="page-header-subtitle">Aula 05, Módulo 02.</div>
+                    <h1 class="page-header-title main-font text-light py-2">Métodos e Requisições</h1>
+                    <!-- <div class="page-header-subtitle">Aula 05, Módulo 02.</div> -->
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<div class="container mt-n10">
-    <div class="row">
-        <div class="col-xxl-12 col-xl-12 mb-4">
-            <div class="card h-100 border-0 rounded-0">
-                <div class="card-body h-100 d-flex flex-column justify-content-center p-0 border-0">
-                    <div class="row align-items-top bg-gray p-0 m-0 shadow border-0">
-                        <div class="col-xl-12 col-xxl-12 p-0 m-0 border-0 rounded">
-                            <main class="player">
-                                <video src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/h264.mov" controls></video>
-                            </main>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> <!--container-fluid-->
+  
+<video id="my_video_1" class="video-js vjs-default-skin" width="auto" height="auto" controls preload="auto" poster="../img/person.jpg" data-setup='{ "asdf": true }' poster="http://video-js.zencoder.com/oceans-clip.png" >
+    <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+    <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm'>
+</video>
+  
 
 <div class="container p-3 pt-5">
     <div class="row justify-content-between  card-content-top">
@@ -183,4 +185,34 @@ main.player{
         </div>
     </div>
 </div>
+<script>
+    videojs.autoSetup();
+
+    videojs('my_video_1').ready(function(){
+    console.log(this.options()); //log all of the default videojs options
+    
+    // Store the video object
+    var myPlayer = this, id = myPlayer.id();
+    // Make up an aspect ratio
+    var aspectRatio = 264/640; 
+
+    function resizeVideoJS(){
+        var width = document.getElementById(id).parentElement.offsetWidth;
+        myPlayer.width(width).height( width * aspectRatio );
+
+    }
+    
+    // Initialize resizeVideoJS()
+    resizeVideoJS();
+    // Then on resize call resizeVideoJS()
+    window.onresize = resizeVideoJS; 
+    });
+</script>
+
+<script>
+$(document).ready(function(){
+    $('#my_video_1').bind('contextmenu',function() { return false; });
+});
+</script>
+
 @endsection
